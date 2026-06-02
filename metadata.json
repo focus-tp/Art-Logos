@@ -1,0 +1,6 @@
+{
+  "name": "АРТ ЛОГОС",
+  "description": "Студия развития речи для малышей с уютным цифровым миром и играми.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

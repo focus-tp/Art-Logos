@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('/assets/fonts/manrope.woff2') format('woff2');
+  font-weight: 400 800;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/assets/fonts/montserrat.woff2') format('woff2');
+  font-weight: 500 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Caveat';
+  src: url('/assets/fonts/caveat.woff2') format('woff2');
+  font-weight: 400 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Glina Script';
+  src: url('/fonts/glina-script_em.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gooseberry';
+  src: url('/fonts/gooseberrynormal.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Everlasting';
+  src: url('/fonts/Everlasting.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --color-em: #0c614b;
+  --color-em-l: #168a6b;
+  --color-em-p: #d8efe9;
+  --color-cream: #f4d6c7;
+  --color-peach: #d38466;
+  --color-peach-l: #f2cec0;
+  --color-ww: #fdfbf9;
+  --color-sage: #77ae9d;
+  --color-sage-l: #ebf5f1;
+  --color-tx: #073628;
+  --color-tx-m: #466e62;
+
+  --font-nunito: 'Manrope', sans-serif;
+  --font-fredoka: 'Montserrat', sans-serif;
+  --font-glina: 'Glina Script', 'Caveat', cursive;
+  --font-gooseberry: 'Gooseberry', 'Caveat', cursive;
+  --font-everlasting: 'Everlasting', sans-serif;
+
+  --shadow-card: 0 4px 20px rgba(7,54,40,.08);
+  --shadow-card-hover: 0 8px 32px rgba(12,97,75,.15);
+
+  --radius-xl: 28px;
+  --radius-l: 20px;
+  --radius-m: 14px;
+}
+
+body {
+  background-color: var(--color-ww);
+  color: var(--color-tx);
+  font-family: var(--font-nunito);
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
