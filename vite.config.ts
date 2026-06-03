@@ -5,7 +5,7 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
-    base: '/Art-Logos/', // <-- Эта строчка чинит белый экран на GitHub Pages
+    base: '/', // <-- Исправлено: для кастомного домена указываем просто корень
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {

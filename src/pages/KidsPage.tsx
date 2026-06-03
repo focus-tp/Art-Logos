@@ -71,21 +71,18 @@ export default function KidsPage() {
     );
   };
 
-
   return (
-    <div className="font-nunito bg-gradient-to-br from-yellow-400 via-amber-400 to-rose-400 min-h-screen text-tx relative overflow-hidden flex flex-col">
-      {/* Simple Header for Kids page */}
+    <div className="font-sans bg-gradient-to-br from-yellow-400 via-amber-400 to-rose-400 min-h-screen text-tx relative overflow-hidden flex flex-col">
       <header className="p-5 flex justify-between items-center relative z-20">
         <Link to="/" className="inline-flex items-center gap-2 bg-white/70 hover:bg-white px-4 py-2 rounded-full font-bold text-tx-m transition-colors shadow-sm">
           <span>⬅️</span> Взрослый раздел
         </Link>
-        <Link to="/" className="flex items-center gap-2 font-fredoka text-xl font-bold text-orange-500 hover:opacity-80 transition-opacity">
-          <img src="/Art-Logos/logo.png" alt="АРТ ЛОГОС" className="h-8 w-auto object-contain" />
+        <Link to="/" className="flex items-center gap-2 font-heading text-xl font-bold text-orange-500 hover:opacity-80 transition-opacity">
+          <img src="/logo.png" alt="АРТ ЛОГОС" className="h-8 w-auto object-contain" />
           <span>ДЕТЯМ</span>
         </Link>
       </header>
 
-      {/* Decorative background elements */}
       <div className="absolute inset-0 pointer-events-none z-0">
         <motion.div animate={{ y: [-15, 15, -15], rotate: [0, 10, 0] }} transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }} className="absolute top-[10%] left-[10%] text-4xl opacity-50">⭐</motion.div>
         <motion.div animate={{ y: [10, -10, 10], rotate: [0, -10, 0] }} transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 1 }} className="absolute bottom-[20%] left-[8%] text-5xl opacity-40">🎵</motion.div>
@@ -105,7 +102,7 @@ export default function KidsPage() {
               className="max-w-3xl w-full flex flex-col md:flex-row-reverse items-center justify-center gap-10"
             >
               <motion.img 
-                src="/Art-Logos/mascot-a.png" 
+                src="/mascot-a.png" 
                 alt="Маскот Буковка А"
                 className="w-64 h-auto drop-shadow-2xl z-20 cursor-pointer"
                 animate={{ y: [0, -15, 0], rotate: [-2, 2, -2] }}
@@ -114,7 +111,7 @@ export default function KidsPage() {
               />
 
               <div className="w-full max-w-md text-center md:text-left">
-                <h1 className="font-gooseberry text-4xl md:text-5xl font-bold text-teal-800 mb-4">
+                <h1 className="font-heading text-4xl md:text-5xl font-bold text-teal-800 mb-4">
                   Привет, я Буковка А! 🎨
                 </h1>
                 <p className="text-xl text-teal-700 font-medium mb-8">
@@ -151,7 +148,7 @@ export default function KidsPage() {
             >
               <div className="flex flex-col md:flex-row items-center gap-6 mb-16 mt-8 justify-center">
                 <motion.img 
-                  src="/Art-Logos/mascot-a.png" 
+                  src="/mascot-a.png" 
                   alt="Маскот Буковка А"
                   className="w-32 h-auto drop-shadow-2xl z-20 cursor-pointer"
                   animate={{ y: [0, -15, 0], rotate: [-2, 2, -2] }}
@@ -160,7 +157,7 @@ export default function KidsPage() {
                 />
                 <div className="bg-white py-4 px-8 rounded-3xl rounded-tl-none md:rounded-tl-3xl md:rounded-l-none shadow border-2 border-orange-100 relative">
                    <div className="absolute w-4 h-4 bg-white border-b-2 border-l-2 border-orange-100 transform -rotate-45 -top-2 left-8 md:top-8 md:-left-2 z-0 hidden md:block"></div>
-                   <h2 className="font-fredoka text-2xl md:text-3xl font-bold text-teal-800 relative z-10">
+                   <h2 className="font-heading text-2xl md:text-3xl font-bold text-teal-800 relative z-10">
                      {renderGreeting()}
                    </h2>
                 </div>
@@ -177,36 +174,33 @@ export default function KidsPage() {
                     className="w-full max-w-5xl mx-auto px-4 mt-8 pb-20"
                   >
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                      {/* Bento Card: Мини-игры */}
                       <motion.div 
                         whileHover={{ scale: 1.05 }} 
                         whileTap={{ scale: 0.95 }}
                         onClick={() => setActiveSection('games')}
                         className="bg-white rounded-[32px] p-0 shadow-xl cursor-pointer border-4 border-indigo-400 flex flex-col items-center justify-center text-center aspect-square md:aspect-auto md:min-h-[300px] relative overflow-hidden group"
                       >
-                        <div className="absolute inset-0 z-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" style={{ backgroundImage: "url('/Art-Logos/game/gamescard.jpeg')" }}>
+                        <div className="absolute inset-0 z-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" style={{ backgroundImage: "url('/game/gamescard.jpeg')" }}>
                         </div>
                       </motion.div>
 
-                      {/* Bento Card: Мультики */}
                       <motion.div 
                         whileHover={{ scale: 1.05 }} 
                         whileTap={{ scale: 0.95 }}
                         onClick={() => setActiveSection('cartoons')}
                         className="bg-white rounded-[32px] p-0 shadow-xl cursor-pointer border-4 border-rose-400 flex flex-col items-center justify-center text-center aspect-square md:aspect-auto md:min-h-[300px] relative overflow-hidden group"
                       >
-                        <div className="absolute inset-0 z-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" style={{ backgroundImage: "url('/Art-Logos/game/multcard.jpeg')" }}>
+                        <div className="absolute inset-0 z-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" style={{ backgroundImage: "url('/game/multcard.jpeg')" }}>
                         </div>
                       </motion.div>
                       
-                      {/* Bento Card: Полезные разминки */}
                       <motion.div 
                         whileHover={{ scale: 1.05 }} 
                         whileTap={{ scale: 0.95 }}
                         onClick={() => setActiveSection('warmups')}
                         className="bg-white rounded-[32px] p-0 shadow-xl cursor-pointer border-4 border-emerald-400 flex flex-col items-center justify-center text-center aspect-square md:aspect-auto md:min-h-[300px] relative overflow-hidden group"
                       >
-                        <div className="absolute inset-0 z-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" style={{ backgroundImage: "url('/Art-Logos/game/razminkacard.jpeg')" }}>
+                        <div className="absolute inset-0 z-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" style={{ backgroundImage: "url('/game/razminkacard.jpeg')" }}>
                         </div>
                       </motion.div>
                     </div>
@@ -262,7 +256,6 @@ export default function KidsPage() {
                       <span>⬅️</span> Назад в меню
                     </button>
                     <div className="bg-white/80 backdrop-blur-md rounded-[40px] overflow-hidden border border-white shadow-xl">
-                      {/* For now render videos, we will customize Videos component to filter by warmups later if needed */}
                       <Videos childName={childName} category="warmups" />
                     </div>
                   </motion.div>

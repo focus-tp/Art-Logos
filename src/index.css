@@ -1,51 +1,7 @@
 @import "tailwindcss";
 
-@font-face {
-  font-family: 'Manrope';
-  src: url('/assets/fonts/manrope.woff2') format('woff2');
-  font-weight: 400 800;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Montserrat';
-  src: url('/assets/fonts/montserrat.woff2') format('woff2');
-  font-weight: 500 900;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Caveat';
-  src: url('/assets/fonts/caveat.woff2') format('woff2');
-  font-weight: 400 700;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Glina Script';
-  src: url('/fonts/glina-script_em.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Gooseberry';
-  src: url('/fonts/gooseberrynormal.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Everlasting';
-  src: url('/fonts/Everlasting.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
 @theme {
+  /* Твои фирменные цвета */
   --color-em: #0c614b;
   --color-em-l: #168a6b;
   --color-em-p: #d8efe9;
@@ -58,12 +14,18 @@
   --color-tx: #073628;
   --color-tx-m: #466e62;
 
+  /* Привязываем новые переменные к скачанным шрифтам */
+  --font-sans: 'Manrope', sans-serif;
+  --font-heading: 'Montserrat', sans-serif;
+
+  /* Умный хак: заставляем старые классы использовать красивый Montserrat */
   --font-nunito: 'Manrope', sans-serif;
   --font-fredoka: 'Montserrat', sans-serif;
-  --font-glina: 'Glina Script', 'Caveat', cursive;
-  --font-gooseberry: 'Gooseberry', 'Caveat', cursive;
-  --font-everlasting: 'Everlasting', sans-serif;
+  --font-glina: 'Montserrat', sans-serif;
+  --font-gooseberry: 'Montserrat', sans-serif;
+  --font-everlasting: 'Montserrat', sans-serif;
 
+  /* Тени и скругления */
   --shadow-card: 0 4px 20px rgba(7,54,40,.08);
   --shadow-card-hover: 0 8px 32px rgba(12,97,75,.15);
 
@@ -75,7 +37,7 @@
 body {
   background-color: var(--color-ww);
   color: var(--color-tx);
-  font-family: var(--font-nunito);
+  font-family: var(--font-sans);
   overflow-x: hidden;
 }
 

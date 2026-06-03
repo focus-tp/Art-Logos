@@ -7,8 +7,8 @@ export default function Hero() {
       {/* Background Video */}
       <div className="absolute inset-0 -z-10 w-full h-full">
         <video 
-          src="/Art-Logos/hero-mobile.mp4" 
-          poster="/Art-Logos/hero-mobile-poster.jpg"
+          src="/hero-mobile.mp4" 
+          poster="/hero-mobile-poster.jpg"
           autoPlay 
           loop 
           muted 
@@ -16,8 +16,8 @@ export default function Hero() {
           className="w-full h-full object-cover block md:hidden" 
         />
         <video 
-          src="/Art-Logos/hero.mp4" 
-          poster="/Art-Logos/hero-poster.jpg"
+          src="/hero.mp4" 
+          poster="/hero-poster.jpg"
           autoPlay 
           loop 
           muted 
@@ -50,7 +50,7 @@ export default function Hero() {
           <div className="inline-flex items-center gap-2 bg-em-p text-em rounded-full py-2 px-4.5 text-[13px] font-bold tracking-wide mb-7 uppercase">
             ✦ Студия речи и творчества · Екатеринбург
           </div>
-          <h1 className="font-everlasting text-[clamp(42px,6vw,72px)] font-bold leading-[1.1] mb-5 tracking-tight text-tx">
+          <h1 className="font-heading text-[clamp(42px,6vw,72px)] font-bold leading-[1.1] mb-5 tracking-tight text-tx">
             Место, где речь<br/>и таланты детей<br/>
             <span className="text-em">расцветают</span> ✨
           </h1>
@@ -69,15 +69,15 @@ export default function Hero() {
           {/* Stats */}
           <div className="flex gap-8 md:gap-10">
             <div>
-              <div className="font-fredoka text-3xl font-bold text-em leading-none">100+</div>
+              <div className="font-heading text-3xl font-bold text-em leading-none">100+</div>
               <div className="text-[13px] text-tx-m font-semibold mt-1">Заговорили легко</div>
             </div>
             <div>
-              <div className="font-fredoka text-3xl font-bold text-em leading-none">8 лет</div>
+              <div className="font-heading text-3xl font-bold text-em leading-none">8 лет</div>
               <div className="text-[13px] text-tx-m font-semibold mt-1">Опыта работы</div>
             </div>
             <div>
-              <div className="font-fredoka text-3xl font-bold text-em leading-none">2 года</div>
+              <div className="font-heading text-3xl font-bold text-em leading-none">2 года</div>
               <div className="text-[13px] text-tx-m font-semibold mt-1">Мин. возраст детей</div>
             </div>
           </div>
