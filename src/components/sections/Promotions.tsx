@@ -9,7 +9,7 @@ export default function Promotions() {
             🎁 Специальные предложения
           </div>
           <h2 className="font-fredoka text-[clamp(28px,4vw,42px)] font-bold leading-[1.15] mb-4 text-tx">
-            С чего начать знакомство с «АРТ ЛОГОС»?
+            С чего начать знакомство с «АРТ-ЛОГОС»?
           </h2>
           <p className="text-[17px] text-tx-m max-w-[600px] mx-auto leading-[1.6]">
             Специальные предложения и скидки для новых учеников нашей студии в Академическом районе.

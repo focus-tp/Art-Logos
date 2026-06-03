@@ -7,7 +7,7 @@ export default function About() {
         
         <Reveal>
           <div className="inline-flex items-center gap-1.5 bg-em-p text-em rounded-full py-1.5 px-4 text-[12px] font-extrabold tracking-wide uppercase mb-5">
-            ✦ Философия студии АРТ ЛОГОС
+            ✦ Философия студии АРТ-ЛОГОС
           </div>
           <h2 className="font-fredoka text-[clamp(30px,4vw,46px)] font-bold leading-[1.15] mb-4 tracking-[-0.5px]">
             Речь раскрывается<br/>через радость<br/>и творчество

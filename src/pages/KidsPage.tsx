@@ -78,7 +78,7 @@ export default function KidsPage() {
           <span>⬅️</span> Взрослый раздел
         </Link>
         <Link to="/" className="flex items-center gap-2 font-heading text-xl font-bold text-orange-500 hover:opacity-80 transition-opacity">
-          <img src="/Art-Logos/logo.png" alt="АРТ ЛОГОС" className="h-8 w-auto object-contain" />
+          <img src="/Art-Logos/logo.png" alt="АРТ-ЛОГОС" className="h-8 w-auto object-contain" />
           <span>ДЕТЯМ</span>
         </Link>
       </header>

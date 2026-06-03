@@ -114,7 +114,7 @@ export default function TeamBento() {
           {/* Card 7: md:col-span-3 */}
           <motion.div variants={item} className="md:col-span-3 bg-teal-600 rounded-3xl p-6 hover:-translate-y-1 hover:shadow-xl transition-all text-center flex items-center justify-center min-h-[100px]">
              <p className="text-white font-bold text-lg md:text-xl">
-               Все специалисты проходят строгий отбор и работают по единой игровой методике АРТ ЛОГОС
+               Все специалисты проходят строгий отбор и работают по единой игровой методике АРТ-ЛОГОС
              </p>
           </motion.div>
 

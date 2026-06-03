@@ -32,14 +32,13 @@ export default function Navbar() {
     <>
     <nav className={`fixed top-0 left-0 right-0 z-[40] transition-all duration-300 py-4 px-5 md:px-10 flex items-center justify-between border-b border-sage/20 bg-ww/98 backdrop-blur-xl ${scrolled ? 'shadow-sm' : ''}`}>
       <Link to="/" onClick={() => { window.scrollTo({ top: 0, behavior: 'smooth' }); closeMenu(); }} className="flex items-center gap-2 font-fredoka text-xl lg:text-2xl font-semibold text-em hover:opacity-80 transition-opacity z-50">
-        <img src="/Art-Logos/logo.png" alt="АРТ ЛОГОС" className="h-8 w-auto object-contain" />
-        <div>АРТ <span className="text-tx">ЛОГОС</span></div>
+        <img src="/Art-Logos/logo.png" alt="АРТ-ЛОГОС" className="h-8 w-auto object-contain" />
+        <div>АРТ-<span className="text-tx">ЛОГОС</span></div>
       </Link>
       
       {/* Desktop Menu */}
       <ul className="hidden lg:flex items-center gap-4 xl:gap-7">
         <li><a href="#about" className="text-[14px] xl:text-[15px] font-semibold text-tx-m hover:text-em transition-colors">О студии</a></li>
-        <li><a href="#promotions" className="text-[14px] xl:text-[15px] font-semibold text-rose-500 hover:text-rose-600 transition-colors">Акции 🎁</a></li>
         <li><a href="#services" className="text-[14px] xl:text-[15px] font-semibold text-tx-m hover:text-em transition-colors">Направления</a></li>
         <li><a href="#team" className="text-[14px] xl:text-[15px] font-semibold text-tx-m hover:text-em transition-colors">Специалисты</a></li>
         <li><a href="#parents" className="text-[14px] xl:text-[15px] font-semibold text-tx-m hover:text-em transition-colors">Родителям</a></li>
@@ -83,7 +82,6 @@ export default function Navbar() {
         <div className="fixed inset-0 bg-ww/98 backdrop-blur-xl z-[35] flex flex-col pt-24 px-6 pb-6 overflow-y-auto lg:hidden">
           <ul className="flex flex-col gap-6 text-center">
             <li><a href="#about" onClick={closeMenu} className="text-xl font-semibold text-tx hover:text-em transition-colors">О студии</a></li>
-            <li><a href="#promotions" onClick={closeMenu} className="text-xl font-semibold text-rose-500 hover:text-rose-600 transition-colors">Акции 🎁</a></li>
             <li><a href="#services" onClick={closeMenu} className="text-xl font-semibold text-tx hover:text-em transition-colors">Направления</a></li>
             <li><a href="#team" onClick={closeMenu} className="text-xl font-semibold text-tx hover:text-em transition-colors">Специалисты</a></li>
             <li><a href="#parents" onClick={closeMenu} className="text-xl font-semibold text-tx hover:text-em transition-colors">Родителям</a></li>

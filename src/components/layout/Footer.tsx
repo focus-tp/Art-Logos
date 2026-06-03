@@ -8,8 +8,8 @@ export default function Footer() {
         {/* Логотип и контакты */}
         <div className="md:col-span-2">
           <div className="flex items-center gap-2 font-fredoka text-2xl font-semibold text-white mb-4">
-            <img src="/logo.png" alt="АРТ ЛОГОС" className="h-8 w-auto object-contain" />
-            <div>АРТ <span className="text-sage">ЛОГОС</span></div>
+            <img src="/logo.png" alt="АРТ-ЛОГОС" className="h-8 w-auto object-contain" />
+            <div>АРТ-<span className="text-sage">ЛОГОС</span></div>
           </div>
           <p className="text-sm text-white/55 leading-relaxed mb-6 max-w-sm">
             Уютный цифровой мир для развития речи малышей 2–7 лет. Логопедическая студия с любовью к детям.
@@ -27,7 +27,6 @@ export default function Footer() {
           <ul className="flex flex-col gap-2.5">
             <li><a href="#about" className="text-sm text-white/70 hover:text-white transition-colors">О нас</a></li>
             <li><a href="#services" className="text-sm text-white/70 hover:text-white transition-colors">Направления</a></li>
-            <li><a href="#promotions" className="text-sm text-white/70 hover:text-white transition-colors">Акции 🎁</a></li>
             <li><a href="#videos" className="text-sm text-white/70 hover:text-white transition-colors">Мультики</a></li>
             <li><a href="#playworld" className="text-sm text-white/70 hover:text-white transition-colors">Игры</a></li>
           </ul>
@@ -46,7 +45,7 @@ export default function Footer() {
       
       {/* Копирайт */}
       <div className="max-w-6xl mx-auto mt-10 pt-6 border-t border-white/10 flex flex-col md:flex-row justify-between items-center text-[13px] text-white/40 gap-2 text-center md:text-left">
-        <span>© {currentYear} АРТ ЛОГОС. Все права защищены.</span>
+        <span>© {currentYear} АРТ-ЛОГОС. Все права защищены.</span>
         <span>Логопедическая студия для детей 2–7 лет</span>
       </div>
     </footer>
