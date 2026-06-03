@@ -7,8 +7,8 @@ export default function Hero() {
       {/* Background Video */}
       <div className="absolute inset-0 -z-10 w-full h-full">
         <video 
-          src="/hero-mobile.mp4" 
-          poster="/hero-mobile-poster.jpg"
+          src="/Art-Logos/hero-mobile.mp4" 
+          poster="/Art-Logos/hero-mobile-poster.jpg"
           autoPlay 
           loop 
           muted 
@@ -16,8 +16,8 @@ export default function Hero() {
           className="w-full h-full object-cover block md:hidden" 
         />
         <video 
-          src="/hero.mp4" 
-          poster="/hero-poster.jpg"
+          src="/Art-Logos/hero.mp4" 
+          poster="/Art-Logos/hero-poster.jpg"
           autoPlay 
           loop 
           muted 

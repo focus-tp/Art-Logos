@@ -16,8 +16,7 @@ export default function Footer() {
           </p>
           <div className="flex gap-3">
             <a href="tel:+79301228133" aria-label="Позвонить нам" className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center text-lg hover:bg-em transition-colors">📞</a>
-            <a href="https://wa.me/79301228133" aria-label="Написать в WhatsApp" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center text-lg hover:bg-em transition-colors">💬</a>
-            <a href="https://t.me/+79301228133" aria-label="Написать в Telegram" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center text-lg hover:bg-em transition-colors">✈️</a>
+            <a href="https://t.me/art_logos_ekb" aria-label="Написать в Telegram" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center text-lg hover:bg-em transition-colors">✈️</a>
             <a href="https://vk.com/write-236774762" aria-label="Написать ВКонтакте" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center text-lg hover:bg-em transition-colors">👥</a>
           </div>
         </div>

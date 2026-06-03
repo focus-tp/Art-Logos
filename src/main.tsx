@@ -11,7 +11,8 @@ import './index.css';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <BrowserRouter>
+    {/* ВЕРНУЛИ БАЗУ: теперь React знает, что мы в папке /Art-Logos/ */}
+    <BrowserRouter basename="/Art-Logos/">
       <App />
     </BrowserRouter>
   </StrictMode>,

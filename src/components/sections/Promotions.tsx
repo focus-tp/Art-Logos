@@ -19,21 +19,22 @@ export default function Promotions() {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         <Reveal delay={0.1}>
-          <div className="bg-white rounded-3xl p-8 shadow-card hover:-translate-y-1 hover:shadow-card-hover transition-all flex flex-col h-full border border-rose-100/50">
+          <div className="bg-white rounded-3xl p-8 shadow-card hover:-translate-y-1 hover:shadow-card-hover transition-all flex flex-col h-full border border-rose-100/50 relative overflow-hidden">
+            <div className="absolute -top-2 -right-4 text-7xl opacity-20">🎉</div>
             <div className="w-14 h-14 bg-rose-100 rounded-2xl flex items-center justify-center text-3xl mb-6">
-              🎙️
+              �
             </div>
             <h3 className="font-fredoka text-[22px] font-bold leading-[1.2] mb-3 text-tx">
-              Бесплатная диагностика речи
+              Первое занятие — 0₽
             </h3>
             <p className="text-tx-m text-[15px] leading-[1.6] mb-8 flex-1">
-              Первая встреча с логопедом — полностью за наш счёт. Проверим звукопроизношение, артикуляционный аппарат и понимание речи в игровой форме. Вы получите честный разбор и пошаговый план развития речи вашего ребёнка.
+              Приходите на первое полноценное занятие совершенно бесплатно! Вы и ваш ребёнок познакомитесь с логопедом, поймёте его подход, а малыш погрузится в нашу уникальную развивающую среду. Без скрытых платежей — просто красивое начало большого пути!
             </p>
             <a 
               href="#cta"
               className="inline-flex justify-center items-center bg-rose-500 text-white rounded-xl py-3 px-6 text-[15px] font-bold hover:bg-rose-600 transition-colors w-full"
             >
-              Записаться на диагностику
+              Записаться на занятие
             </a>
           </div>
         </Reveal>
@@ -61,23 +62,23 @@ export default function Promotions() {
         <Reveal delay={0.3}>
           <div className="bg-white rounded-3xl p-8 shadow-card hover:-translate-y-1 hover:shadow-card-hover transition-all flex flex-col h-full border border-orange-100">
             <div className="w-14 h-14 bg-orange-100 rounded-2xl flex items-center justify-center text-3xl mb-6">
-              🎨
+              🎙️
             </div>
             <h3 className="font-fredoka text-[22px] font-bold leading-[1.2] mb-3 text-tx">
-              Скидка 20% на первый абонемент
+              Бесплатная диагностика речи
             </h3>
             <p className="text-tx-m text-[15px] leading-[1.6] mb-8 flex-1">
-              В честь открытия нашей группы ВКонтакте дарим скидку 20% на покупку первого абонемента! Акция действует на любые направления студии: индивидуальные занятия с логопедом, подготовку к школе или робототехнику.
+              Первая встреча с логопедом — полностью за наш счёт. Проверим звукопроизношение, артикуляционный аппарат и понимание речи в игровой форме. Вы получите честный разбор и пошаговый план развития речи вашего ребёнка.
             </p>
             <a 
-              href="https://vk.com/write-236774762"
-              target="_blank" rel="noreferrer"
+              href="#cta"
               className="inline-flex justify-center items-center bg-orange-400 text-white rounded-xl py-3 px-6 text-[15px] font-bold hover:bg-orange-500 transition-colors w-full"
             >
-              Получить скидку
+              Записаться на диагностику
             </a>
           </div>
         </Reveal>
+
       </div>
     </section>
   );

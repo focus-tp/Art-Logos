@@ -55,14 +55,7 @@ export default function Cta() {
             📞 Позвонить
           </a>
           <a 
-            href="https://wa.me/79301228133" 
-            target="_blank" rel="noreferrer"
-            className="bg-transparent text-white border-2 border-white/50 rounded-[50px] py-3.5 px-7 text-[16px] font-bold hover:bg-white/10 hover:border-white transition-colors flex items-center justify-center"
-          >
-            💬 Написать в WhatsApp
-          </a>
-          <a 
-            href="https://t.me/+79301228133"
+            href="https://t.me/art_logos_ekb"
             target="_blank" rel="noreferrer"
             className="bg-transparent text-white border-2 border-white/50 rounded-[50px] py-3.5 px-7 text-[16px] font-bold hover:bg-white/10 hover:border-white transition-colors flex items-center justify-center"
           >
