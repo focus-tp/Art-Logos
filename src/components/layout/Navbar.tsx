@@ -32,7 +32,7 @@ export default function Navbar() {
     <>
     <nav className={`fixed top-0 left-0 right-0 z-[40] transition-all duration-300 py-4 px-5 md:px-10 flex items-center justify-between border-b border-sage/20 bg-ww/98 backdrop-blur-xl ${scrolled ? 'shadow-sm' : ''}`}>
       <Link to="/" onClick={() => { window.scrollTo({ top: 0, behavior: 'smooth' }); closeMenu(); }} className="flex items-center gap-2 font-fredoka text-xl lg:text-2xl font-semibold text-em hover:opacity-80 transition-opacity z-50">
-        <img src="/logo.png" alt="АРТ ЛОГОС" className="h-8 w-auto object-contain" />
+        <img src="/Art-Logos/logo.png" alt="АРТ ЛОГОС" className="h-8 w-auto object-contain" />
         <div>АРТ <span className="text-tx">ЛОГОС</span></div>
       </Link>
       

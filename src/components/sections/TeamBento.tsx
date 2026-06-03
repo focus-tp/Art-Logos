@@ -36,7 +36,7 @@ export default function TeamBento() {
           {/* Card 1: md:col-span-2 - Flex-row */}
           <motion.div variants={item} className="md:col-span-2 bg-[#F7F2EC] rounded-3xl p-6 hover:-translate-y-1 hover:shadow-xl transition-all flex flex-col sm:flex-row gap-6 items-center sm:items-start">
             <div className="w-32 h-32 sm:w-40 sm:h-40 shrink-0 rounded-full bg-white shadow-inner flex items-center justify-center text-5xl border-4 border-white/50 overflow-hidden">
-               <img src="/nadya.jpeg" alt="Надежда Лебедева" className="w-full h-full object-cover" />
+               <img src="/Art-Logos/nadya.jpeg" alt="Надежда Лебедева" className="w-full h-full object-cover" />
             </div>
             <div className="flex flex-col text-center sm:text-left h-full justify-center">
               <h3 className="font-fredoka text-2xl font-bold text-teal-800 mb-1">Надежда Лебедева</h3>
@@ -49,7 +49,7 @@ export default function TeamBento() {
           {/* Card 2: md:col-span-1 - Vertical */}
           <motion.div variants={item} className="md:col-span-1 bg-[#F7F2EC] rounded-3xl p-6 hover:-translate-y-1 hover:shadow-xl transition-all flex flex-col items-center text-center">
             <div className="w-28 h-28 shrink-0 rounded-full bg-white shadow-inner flex items-center justify-center text-4xl border-4 border-white/50 mb-4 overflow-hidden">
-              <img src="/nadezda.jpeg" alt="Надежда Гурская" className="w-full h-full object-cover" />
+              <img src="/Art-Logos/nadezda.jpeg" alt="Надежда Гурская" className="w-full h-full object-cover" />
             </div>
             <h3 className="font-fredoka text-xl font-bold text-teal-800 mb-1">Надежда Гурская</h3>
             <p className="font-bold text-orange-500 text-sm mb-3">Логопед</p>
@@ -60,7 +60,7 @@ export default function TeamBento() {
           {/* Card 3: md:col-span-1 - Vertical */}
           <motion.div variants={item} className="md:col-span-1 bg-[#F7F2EC] rounded-3xl p-6 hover:-translate-y-1 hover:shadow-xl transition-all flex flex-col items-center text-center">
             <div className="w-28 h-28 shrink-0 rounded-full bg-white shadow-inner flex items-center justify-center text-4xl border-4 border-white/50 mb-4 overflow-hidden">
-               <img src="/goncharuk.jpeg" alt="Анна Гончарук" className="w-full h-full object-cover" />
+               <img src="/Art-Logos/goncharuk.jpeg" alt="Анна Гончарук" className="w-full h-full object-cover" />
             </div>
             <h3 className="font-fredoka text-xl font-bold text-teal-800 mb-1">Анна Гончарук</h3>
             <p className="font-bold text-orange-500 text-sm mb-3">Логопед-дефектолог</p>
@@ -71,7 +71,7 @@ export default function TeamBento() {
           {/* Card 4: md:col-span-2 - Flex-row */}
           <motion.div variants={item} className="md:col-span-2 bg-[#F7F2EC] rounded-3xl p-6 hover:-translate-y-1 hover:shadow-xl transition-all flex flex-col sm:flex-row gap-6 items-center sm:items-start">
             <div className="w-32 h-32 sm:w-40 sm:h-40 shrink-0 rounded-full bg-white shadow-inner flex items-center justify-center text-5xl border-4 border-white/50 overflow-hidden">
-              <img src="/chirkovskaya.jpeg" alt="Полина Чирковская" className="w-full h-full object-cover" />
+              <img src="/Art-Logos/chirkovskaya.jpeg" alt="Полина Чирковская" className="w-full h-full object-cover" />
             </div>
             <div className="flex flex-col text-center sm:text-left h-full justify-center">
               <h3 className="font-fredoka text-2xl font-bold text-teal-800 mb-1">Полина Чирковская</h3>
@@ -84,7 +84,7 @@ export default function TeamBento() {
           {/* Card 5: md:col-span-2 - Flex-row */}
           <motion.div variants={item} className="md:col-span-2 bg-[#F7F2EC] rounded-3xl p-6 hover:-translate-y-1 hover:shadow-xl transition-all flex flex-col sm:flex-row gap-6 items-center sm:items-start">
             <div className="w-32 h-32 sm:w-40 sm:h-40 shrink-0 rounded-full bg-white shadow-inner flex items-center justify-center text-5xl border-4 border-white/50 overflow-hidden">
-              <img src="/solovieva.jpeg" alt="Анастасия Соловьёва" className="w-full h-full object-cover" />
+              <img src="/Art-Logos/solovieva.jpeg" alt="Анастасия Соловьёва" className="w-full h-full object-cover" />
             </div>
             <div className="flex flex-col text-center sm:text-left h-full justify-center">
               <h3 className="font-fredoka text-2xl font-bold text-teal-800 mb-1">Анастасия Соловьёва</h3>
@@ -97,7 +97,7 @@ export default function TeamBento() {
           {/* Card 6: md:col-span-1 - Vertical */}
           <motion.div variants={item} className="md:col-span-1 bg-[#F7F2EC] rounded-3xl p-6 hover:-translate-y-1 hover:shadow-xl transition-all flex flex-col items-center text-center">
             <div className="w-28 h-28 shrink-0 rounded-full bg-white shadow-inner flex items-center justify-center text-4xl border-4 border-white/50 mb-4 overflow-hidden">
-               <img src="/yugova.jpeg" alt="Наталья Югова" className="w-full h-full object-cover" />
+               <img src="/Art-Logos/yugova.jpeg" alt="Наталья Югова" className="w-full h-full object-cover" />
             </div>
             <h3 className="font-fredoka text-xl font-bold text-teal-800 mb-1">Наталья Югова</h3>
             <p className="font-bold text-orange-500 text-sm mb-3">Педагог по рисованию</p>
