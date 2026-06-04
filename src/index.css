@@ -14,16 +14,17 @@
   --color-tx: #073628;
   --color-tx-m: #466e62;
 
-  /* Привязываем новые переменные к скачанным шрифтам */
-  --font-sans: 'Manrope', sans-serif;
-  --font-heading: 'Montserrat', sans-serif;
+  /* 1. Настраиваем главные переменные шрифтов */
+  --font-sans: 'Manrope', sans-serif;         /* Для всего интерфейса */
+  --font-kids: 'Comfortaa', cursive;          /* Для детского раздела и игр */
 
-  /* Умный хак: заставляем старые классы использовать красивый Montserrat */
+  /* 2. Умный хак: переводим старые классы на Manrope (чтобы взрослый раздел выглядел строго) */
+  --font-heading: 'Manrope', sans-serif;
   --font-nunito: 'Manrope', sans-serif;
-  --font-fredoka: 'Montserrat', sans-serif;
-  --font-glina: 'Montserrat', sans-serif;
-  --font-gooseberry: 'Montserrat', sans-serif;
-  --font-everlasting: 'Montserrat', sans-serif;
+  --font-fredoka: 'Manrope', sans-serif;
+  --font-glina: 'Manrope', sans-serif;
+  --font-gooseberry: 'Manrope', sans-serif;
+  --font-everlasting: 'Manrope', sans-serif;
 
   /* Тени и скругления */
   --shadow-card: 0 4px 20px rgba(7,54,40,.08);
@@ -37,10 +38,16 @@
 body {
   background-color: var(--color-ww);
   color: var(--color-tx);
-  font-family: var(--font-sans);
+  font-family: var(--font-sans); /* По умолчанию везде будет Manrope */
   overflow-x: hidden;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+/* 3. Создаем глобальный класс, который принудительно включает Comfortaa внутри детского раздела */
+.font-kids, 
+.font-kids * {
+  font-family: var(--font-kids) !important;
 }

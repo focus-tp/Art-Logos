@@ -72,12 +72,12 @@ export default function KidsPage() {
   };
 
   return (
-    <div className="font-sans bg-gradient-to-br from-yellow-400 via-amber-400 to-rose-400 min-h-screen text-tx relative overflow-hidden flex flex-col">
+    <div className="font-kids bg-gradient-to-br from-yellow-400 via-amber-400 to-rose-400 min-h-screen text-tx relative overflow-hidden flex flex-col">
       <header className="p-5 flex justify-between items-center relative z-20">
         <Link to="/" className="inline-flex items-center gap-2 bg-white/70 hover:bg-white px-4 py-2 rounded-full font-bold text-tx-m transition-colors shadow-sm">
           <span>⬅️</span> Взрослый раздел
         </Link>
-        <Link to="/" className="flex items-center gap-2 font-heading text-xl font-bold text-orange-500 hover:opacity-80 transition-opacity">
+        <Link to="/" className="flex items-center gap-2 text-xl font-bold text-orange-500 hover:opacity-80 transition-opacity">
           <img src="/Art-Logos/logo.png" alt="АРТ-ЛОГОС" className="h-8 w-auto object-contain" />
           <span>ДЕТЯМ</span>
         </Link>
@@ -111,7 +111,7 @@ export default function KidsPage() {
               />
 
               <div className="w-full max-w-md text-center md:text-left">
-                <h1 className="font-heading text-4xl md:text-5xl font-bold text-teal-800 mb-4">
+                <h1 className="text-4xl md:text-5xl font-bold text-teal-800 mb-4">
                   Привет, я Буковка А! 🎨
                 </h1>
                 <p className="text-xl text-teal-700 font-medium mb-8">
@@ -157,7 +157,7 @@ export default function KidsPage() {
                 />
                 <div className="bg-white py-4 px-8 rounded-3xl rounded-tl-none md:rounded-tl-3xl md:rounded-l-none shadow border-2 border-orange-100 relative">
                    <div className="absolute w-4 h-4 bg-white border-b-2 border-l-2 border-orange-100 transform -rotate-45 -top-2 left-8 md:top-8 md:-left-2 z-0 hidden md:block"></div>
-                   <h2 className="font-heading text-2xl md:text-3xl font-bold text-teal-800 relative z-10">
+                   <h2 className="text-2xl md:text-3xl font-bold text-teal-800 relative z-10">
                      {renderGreeting()}
                    </h2>
                 </div>
