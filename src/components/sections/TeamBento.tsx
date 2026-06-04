@@ -43,7 +43,7 @@ export default function TeamBento() {
               <h3 className="font-fredoka text-2xl font-bold text-teal-800 mb-1">Надежда Лебедева</h3>
               <p className="font-bold text-orange-500 mb-3">Основатель студии, логопед</p>
               <p className="italic text-teal-700 mb-4 text-lg">«Речь и таланты детей расцветают через творчество»</p>
-              <p className="text-sm text-teal-600/80 font-medium leading-tight">Образование:<br/>УрГПУ (дефектология, логопедия), логопедический массаж.</p>
+              <p className="text-sm text-teal-600/80 font-medium leading-tight">Образование:<br/>ЯГПУ им. К.Д Ушинского, г. Ярославль. Специальное дефектологическое образование. Логопедия, логопедический массаж.</p>
             </div>
           </motion.div>
 
@@ -56,7 +56,7 @@ export default function TeamBento() {
             <h3 className="font-fredoka text-xl font-bold text-teal-800 mb-1">Надежда Гурская</h3>
             <p className="font-bold text-orange-500 text-sm mb-3">Логопед</p>
             <p className="italic text-teal-700 mb-4 flex-1">«Терпение и труд всё перетрут»</p>
-            <p className="text-xs text-teal-600/80 font-medium">Образование:<br/>УрГПУ (логопедия).</p>
+            <p className="text-xs text-teal-600/80 font-medium">Образование:<br/>УрГПУ Специальное дефектологическое образование. Логопедия.</p>
           </motion.div>
 
           {/* Card 3: md:col-span-1 - Vertical */}
@@ -68,7 +68,7 @@ export default function TeamBento() {
             <h3 className="font-fredoka text-xl font-bold text-teal-800 mb-1">Анна Гончарук</h3>
             <p className="font-bold text-orange-500 text-sm mb-3">Логопед-дефектолог</p>
             <p className="italic text-teal-700 mb-4 flex-1">«Говорите правильно — достигайте большего»</p>
-            <p className="text-xs text-teal-600/80 font-medium">Образование:<br/>УрГПУ, зондовый массаж при дизартрии.</p>
+            <p className="text-xs text-teal-600/80 font-medium">Образование:<br/>УрГПУ Специальное дефектологическое образование. Логопедия. Зондовый массаж при дизартрии.</p>
           </motion.div>
 
           {/* Card 4: md:col-span-2 - Flex-row */}
@@ -81,7 +81,7 @@ export default function TeamBento() {
               <h3 className="font-fredoka text-2xl font-bold text-teal-800 mb-1">Полина Чирковская</h3>
               <p className="font-bold text-orange-500 mb-3">Специалист по раннему развитию</p>
               <p className="italic text-teal-700 mb-4 text-lg">«Каждый ребёнок — уникальный мир, требующий чуткого сердца»</p>
-              <p className="text-sm text-teal-600/80 font-medium leading-tight">Образование:<br/>Современные методики развития детей раннего возраста.</p>
+              <p className="text-sm text-teal-600/80 font-medium leading-tight">:<br/>Современные методики развития детей раннего возраста.</p>
             </div>
           </motion.div>
 
@@ -95,7 +95,7 @@ export default function TeamBento() {
               <h3 className="font-fredoka text-2xl font-bold text-teal-800 mb-1">Анастасия Соловьёва</h3>
               <p className="font-bold text-orange-500 mb-3">Педагог по английскому языку</p>
               <p className="italic text-teal-700 mb-4 text-lg">«Каждый ученик может больше, чем сам о себе думает»</p>
-              <p className="text-sm text-teal-600/80 font-medium leading-tight">Образование:<br/>УрФУ им. Б.Н. Ельцина.</p>
+              <p className="text-sm text-teal-600/80 font-medium leading-tight">Образование<br/>УрФУ им. Б.Н. Ельцина. Учитель иностранного языка</p>
             </div>
           </motion.div>
 
@@ -108,7 +108,7 @@ export default function TeamBento() {
             <h3 className="font-fredoka text-xl font-bold text-teal-800 mb-1">Наталья Югова</h3>
             <p className="font-bold text-orange-500 text-sm mb-3">Педагог по рисованию</p>
             <p className="italic text-teal-700 mb-4 flex-1">«Этому миру нужно больше художников»</p>
-            <p className="text-xs text-teal-600/80 font-medium">Образование:<br/>Художественная школа «Два-ТриТона».</p>
+            <p className="text-xs text-teal-600/80 font-medium"><br/>Художественная школа «Два-ТриТона».</p>
           </motion.div>
 
           {/* Card 7: md:col-span-3 */}
