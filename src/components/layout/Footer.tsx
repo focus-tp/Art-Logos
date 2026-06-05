@@ -27,8 +27,7 @@ export default function Footer() {
           <ul className="flex flex-col gap-2.5">
             <li><a href="#about" className="text-sm text-white/70 hover:text-white transition-colors">О нас</a></li>
             <li><a href="#services" className="text-sm text-white/70 hover:text-white transition-colors">Направления</a></li>
-            <li><a href="#videos" className="text-sm text-white/70 hover:text-white transition-colors">Мультики</a></li>
-            <li><a href="#playworld" className="text-sm text-white/70 hover:text-white transition-colors">Игры</a></li>
+
           </ul>
         </div>
         

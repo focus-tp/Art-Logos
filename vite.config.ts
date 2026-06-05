@@ -5,7 +5,7 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
-    base: '/Art-Logos/', // <-- ВЕРНУЛИ НА МЕСТО: это критично для показа клиенту на GitHub Pages
+    base: '/', // <-- ВЕРНУЛИ НА МЕСТО: это критично для показа клиенту на GitHub Pages
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
