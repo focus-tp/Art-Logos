@@ -43,11 +43,14 @@ export default function Navbar() {
         <li><a href="#team" className="text-[14px] xl:text-[15px] font-semibold text-tx-m hover:text-em transition-colors">Специалисты</a></li>
         <li><a href="#parents" className="text-[14px] xl:text-[15px] font-semibold text-tx-m hover:text-em transition-colors">Родителям</a></li>
         <li><a href="#cta" className="text-[14px] xl:text-[15px] font-semibold text-tx-m hover:text-em transition-colors">Контакты</a></li>
+        
+        {/* Временно скрываем кнопку "Детям" на десктопе 
         <li>
           <Link to="/kids" className="bg-orange-400 text-white px-4 xl:px-5 py-2 rounded-full text-[14px] xl:text-[15px] font-bold shadow-md hover:bg-orange-500 hover:-translate-y-0.5 transition-all flex items-center gap-2">
             🎈 Детям
           </Link>
         </li>
+        */}
       </ul>
       
       <div className="hidden lg:block">
@@ -86,11 +89,15 @@ export default function Navbar() {
             <li><a href="#team" onClick={closeMenu} className="text-xl font-semibold text-tx hover:text-em transition-colors">Специалисты</a></li>
             <li><a href="#parents" onClick={closeMenu} className="text-xl font-semibold text-tx hover:text-em transition-colors">Родителям</a></li>
             <li><a href="#cta" onClick={closeMenu} className="text-xl font-semibold text-tx hover:text-em transition-colors">Контакты</a></li>
+            
+            {/* Временно скрываем кнопку "Детям" на мобильных
             <li className="flex justify-center mt-4">
               <Link to="/kids" onClick={closeMenu} className="bg-orange-400 text-white px-8 py-3 rounded-full text-lg font-bold shadow-md hover:bg-orange-500 hover:-translate-y-0.5 transition-all flex items-center justify-center gap-2 w-full max-w-xs">
                 🎈 Детям
               </Link>
             </li>
+            */}
+            
             <li className="flex justify-center mt-2">
               <a 
                 href="tel:+79301228133" 

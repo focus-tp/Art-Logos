@@ -57,16 +57,20 @@ export default function Hero() {
           <p className="text-[18px] font-medium text-tx-m leading-[1.65] mb-10 max-w-[480px]">
             Бережный запуск и развитие речи через творчество и арт-терапию. Профессиональный логопед в Академическом для детей от 2 лет.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 mb-12">
+          
+          {/* Кнопки выровнены по верхнему краю (items-start) */}
+          <div className="flex flex-col sm:flex-row items-start gap-4 mb-12">
             <div className="flex flex-col">
               <a href="#cta" className="bg-em text-white rounded-full py-4 px-9 text-[17px] font-extrabold hover:bg-em-l hover:-translate-y-0.5 transition-all shadow-[0_6px_28px_rgba(12,97,75,.4)] text-center">
                 🎁 Записаться бесплатно
               </a>
-              <p className="text-[14px] font-medium text-tx-m/80 mt-2 pl-4">
+              <p className="text-[14px] font-medium text-tx-m/80 mt-2 pl-4 max-w-[320px]">
                 * Включает диагностику речи и групповое занятие для детей от 2 лет
               </p>
             </div>
-            <a href="#services" className="bg-transparent text-tx border-2 border-tx/15 rounded-full py-3.5 px-7 text-[16px] font-bold hover:border-em hover:text-em transition-colors text-center inline-flex justify-center items-center gap-2">
+            
+            {/* Кнопка "Наши методики": добавлено whitespace-nowrap, shrink-0 и высота 58px для идеальной геометрии */}
+            <a href="#services" className="bg-transparent text-tx border-2 border-tx/15 rounded-full h-[58px] px-8 text-[16px] font-bold hover:border-em hover:text-em transition-colors text-center inline-flex justify-center items-center gap-2 whitespace-nowrap shrink-0">
               Наши методики →
             </a>
           </div>
