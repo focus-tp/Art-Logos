@@ -11,8 +11,8 @@ import './index.css';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    {/* ВЕРНУЛИ БАЗУ: теперь React знает, что мы в папке / */}
-    <BrowserRouter basename="/">
+    {/* Для корневого домена basename не нужен вообще */}
+    <BrowserRouter>
       <App />
     </BrowserRouter>
   </StrictMode>,
