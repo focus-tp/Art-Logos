@@ -87,7 +87,7 @@ function ServiceCard({ s, i }: { s: ServiceItem, i: number }) {
 
           {/* Фирменная Буковка А в углу */}
           <img 
-            src="/Art-Logos/mascot-a.png" 
+            src="/mascot-a.png" 
             alt="Буковка А" 
             className="absolute -bottom-5 -right-5 w-24 h-auto opacity-15 pointer-events-none z-0"
           />

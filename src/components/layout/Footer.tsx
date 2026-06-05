@@ -8,7 +8,7 @@ export default function Footer() {
         {/* Логотип и контакты */}
         <div className="md:col-span-2">
           <div className="flex items-center gap-2 font-fredoka text-2xl font-semibold text-white mb-4">
-            <img src="/Art-Logos/logo.png" alt="АРТ-ЛОГОС" className="h-8 w-auto object-contain" />
+            <img src="/logo.png" alt="АРТ-ЛОГОС" className="h-8 w-auto object-contain" />
             <div>АРТ-<span className="text-sage">ЛОГОС</span></div>
           </div>
           <p className="text-sm text-white/55 leading-relaxed mb-6 max-w-sm">

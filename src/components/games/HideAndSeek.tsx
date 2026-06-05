@@ -3,13 +3,13 @@ import { motion } from 'motion/react';
 
 // ИСПРАВЛЕНИЕ: Добавили /Art-Logos ко всем путям картинок и звуков
 const ANIMALS = [
-  { id: "cow", img: "/Art-Logos/game/cow.png", audioPath: "/Art-Logos/sound/cow.mp3", audioPath2: "/Art-Logos/sound/cow-2.mp3" },
-  { id: "dog", img: "/Art-Logos/game/dog.png", audioPath: "/Art-Logos/sound/Dog.mp3", audioPath2: "/Art-Logos/sound/dog-2.mp3" },
-  { id: "cat", img: "/Art-Logos/game/cat.png", audioPath: "/Art-Logos/sound/cat.mp3", audioPath2: "/Art-Logos/sound/cat-2.mp3" },
-  { id: "duck", img: "/Art-Logos/game/duck.png", audioPath: "/Art-Logos/sound/duck.mp3", audioPath2: "/Art-Logos/sound/duck-2.mp3" },
-  { id: "frog", img: "/Art-Logos/game/frog.png", audioPath: "/Art-Logos/sound/frog.mp3", audioPath2: "/Art-Logos/sound/frog-2.mp3" },
-  { id: "pig", img: "/Art-Logos/game/pig.png", audioPath: "/Art-Logos/sound/pig.mp3", audioPath2: "/Art-Logos/sound/pig-2.mp3" },
-  { id: "tiger", img: "/Art-Logos/game/tiger.png", audioPath: "/Art-Logos/sound/tiger.mp3", audioPath2: "/Art-Logos/sound/tiger-2.mp3" },
+  { id: "cow", img: "/game/cow.png", audioPath: "/sound/cow.mp3", audioPath2: "/sound/cow-2.mp3" },
+  { id: "dog", img: "/game/dog.png", audioPath: "/sound/Dog.mp3", audioPath2: "/sound/dog-2.mp3" },
+  { id: "cat", img: "/game/cat.png", audioPath: "/sound/cat.mp3", audioPath2: "/sound/cat-2.mp3" },
+  { id: "duck", img: "/game/duck.png", audioPath: "/sound/duck.mp3", audioPath2: "/sound/duck-2.mp3" },
+  { id: "frog", img: "/game/frog.png", audioPath: "/sound/frog.mp3", audioPath2: "/sound/frog-2.mp3" },
+  { id: "pig", img: "/game/pig.png", audioPath: "/sound/pig.mp3", audioPath2: "/sound/pig-2.mp3" },
+  { id: "tiger", img: "/game/tiger.png", audioPath: "/sound/tiger.mp3", audioPath2: "/sound/tiger-2.mp3" },
 ];
 
 export default function HideAndSeek() {
@@ -38,7 +38,7 @@ export default function HideAndSeek() {
       }
       
       // ИСПРАВЛЕНИЕ: Путь к звуку "Кто там?"
-      const introAudio = new Audio("/Art-Logos/sound/whos-there.mp3");
+      const introAudio = new Audio("/sound/whos-there.mp3");
       activeAudio.current = introAudio;
       
       introAudio.onended = () => {
@@ -187,7 +187,7 @@ export default function HideAndSeek() {
           >
             <img 
               // ИСПРАВЛЕНИЕ: Путь к картинке облака
-              src="/Art-Logos/game/cloud.png" 
+              src="/game/cloud.png" 
               alt="облако"
               draggable={false} 
               className="w-[200%] h-[200%] md:w-[240%] md:h-[240%] max-w-none object-contain select-none drop-shadow-2xl translate-y-8"

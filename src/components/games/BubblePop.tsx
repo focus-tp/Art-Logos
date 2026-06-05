@@ -4,30 +4,30 @@ import Confetti from "react-confetti";
 import { useWindowSize } from "react-use";
 
 const ANIMALS = [
-  { id: "cow", img: "/Art-Logos/game/cow.png", soundText: "МУ-У!", color: "#FDE68A", audioPath: "/Art-Logos/sound/cow.mp3" },
-  { id: "dog", img: "/Art-Logos/game/dog.png", soundText: "ГАВ-ГАВ!", color: "#BFDBFE", audioPath: "/Art-Logos/sound/Dog.mp3" },
-  { id: "cat", img: "/Art-Logos/game/cat.png", soundText: "МЯУ!", color: "#FBCFE8", audioPath: "/Art-Logos/sound/cat.mp3" },
+  { id: "cow", img: "/game/cow.png", soundText: "МУ-У!", color: "#FDE68A", audioPath: "/sound/cow.mp3" },
+  { id: "dog", img: "/game/dog.png", soundText: "ГАВ-ГАВ!", color: "#BFDBFE", audioPath: "/sound/Dog.mp3" },
+  { id: "cat", img: "/game/cat.png", soundText: "МЯУ!", color: "#FBCFE8", audioPath: "/sound/cat.mp3" },
   {
     id: "duck",
-    img: "/Art-Logos/game/duck.png",
+    img: "/game/duck.png",
     soundText: "КРЯ-КРЯ!",
     color: "#FEF08A",
-    audioPath: "/Art-Logos/sound/duck.mp3"
+    audioPath: "/sound/duck.mp3"
   },
   {
     id: "frog",
-    img: "/Art-Logos/game/frog.png",
+    img: "/game/frog.png",
     soundText: "КВА-КВА!",
     color: "#BBF7D0",
-    audioPath: "/Art-Logos/sound/frog.mp3"
+    audioPath: "/sound/frog.mp3"
   },
-  { id: "pig", img: "/Art-Logos/game/pig.png", soundText: "ХРЮ-ХРЮ!", color: "#FFCFD2", audioPath: "/Art-Logos/sound/pig.mp3" },
+  { id: "pig", img: "/game/pig.png", soundText: "ХРЮ-ХРЮ!", color: "#FFCFD2", audioPath: "/sound/pig.mp3" },
   {
     id: "tiger",
-    img: "/Art-Logos/game/tiger.png",
+    img: "/game/tiger.png",
     soundText: "Р-Р-Р!",
     color: "#FDBA74",
-    audioPath: "/Art-Logos/sound/tiger.mp3"
+    audioPath: "/sound/tiger.mp3"
   },
 ];
 
@@ -190,7 +190,7 @@ export default function BubblePop() {
       <div className="absolute top-[3vh] left-1/2 -translate-x-1/2 z-30 pointer-events-none flex flex-col items-center">
         <div className="relative">
           <motion.img
-            src="/Art-Logos/mascot-a.png"
+            src="/mascot-a.png"
             alt="Hero"
             className="w-24 h-auto drop-shadow-lg"
             animate={{ y: heroBouncing ? -15 : 0 }}
