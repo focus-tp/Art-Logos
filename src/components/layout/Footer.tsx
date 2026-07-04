@@ -12,7 +12,7 @@ export default function Footer() {
             <div>АРТ-<span className="text-sage">ЛОГОС</span></div>
           </div>
           <p className="text-sm text-white/55 leading-relaxed mb-6 max-w-sm">
-            Уютный цифровой мир для развития речи детей от 2 лет. Логопедическая студия с любовью к детям.
+            Уютный цифровой мир для развития речи детей от 2 лет. Логопедический центр с любовью к детям.
           </p>
           <div className="flex gap-3">
             <a href="tel:+79301228133" aria-label="Позвонить нам" className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center text-lg hover:bg-em transition-colors">📞</a>
@@ -21,9 +21,9 @@ export default function Footer() {
           </div>
         </div>
         
-        {/* Навигация: Студия */}
+        {/* Навигация: Центр */}
         <div className="flex flex-col">
-          <h4 className="text-sm font-extrabold mb-4 text-white/50 tracking-wide uppercase">Студия</h4>
+          <h4 className="text-sm font-extrabold mb-4 text-white/50 tracking-wide uppercase">Центр</h4>
           <ul className="flex flex-col gap-2.5">
             <li><a href="#about" className="text-sm text-white/70 hover:text-white transition-colors">О нас</a></li>
             <li><a href="#services" className="text-sm text-white/70 hover:text-white transition-colors">Направления</a></li>

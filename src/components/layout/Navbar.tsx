@@ -84,7 +84,7 @@ export default function Navbar() {
       {mobileMenuOpen && (
         <div className="fixed inset-0 bg-ww/98 backdrop-blur-xl z-[35] flex flex-col pt-24 px-6 pb-6 overflow-y-auto lg:hidden">
           <ul className="flex flex-col gap-6 text-center">
-            <li><a href="#about" onClick={closeMenu} className="text-xl font-semibold text-tx hover:text-em transition-colors">О студии</a></li>
+            <li><a href="#about" onClick={closeMenu} className="text-xl font-semibold text-tx hover:text-em transition-colors">О центре</a></li>
             <li><a href="#services" onClick={closeMenu} className="text-xl font-semibold text-tx hover:text-em transition-colors">Направления</a></li>
             <li><a href="#team" onClick={closeMenu} className="text-xl font-semibold text-tx hover:text-em transition-colors">Специалисты</a></li>
             <li><a href="#parents" onClick={closeMenu} className="text-xl font-semibold text-tx hover:text-em transition-colors">Родителям</a></li>

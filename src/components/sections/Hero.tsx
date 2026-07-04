@@ -48,7 +48,7 @@ export default function Hero() {
         {/* Content */}
         <div className="flex-1 max-w-[580px] z-10">
           <div className="inline-flex items-center gap-2 bg-em-p text-em rounded-full py-2 px-4.5 text-[13px] font-bold tracking-wide mb-7 uppercase">
-            ✦ Студия речи и творчества · Екатеринбург
+            ✦ Детский центр речи и творчества · Екатеринбург
           </div>
           <h1 className="font-heading text-[clamp(42px,6vw,72px)] font-bold leading-[1.1] mb-5 tracking-tight text-tx">
             Место, где речь<br/>и таланты детей<br/>

@@ -7,7 +7,7 @@ export default function About() {
         
         <Reveal>
           <div className="inline-flex items-center gap-1.5 bg-em-p text-em rounded-full py-1.5 px-4 text-[12px] font-extrabold tracking-wide uppercase mb-5">
-            ✦ Философия студии АРТ-ЛОГОС
+            ✦ Философия центра АРТ-ЛОГОС
           </div>
           <h2 className="font-fredoka text-[clamp(30px,4vw,46px)] font-bold leading-[1.15] mb-4 tracking-[-0.5px]">
             Речь раскрывается<br/>через радость<br/>и творчество
@@ -22,7 +22,7 @@ export default function About() {
               Каждый ребёнок — уникальная вселенная. Ключ к её раскрытию лежит через искренний интерес, доверие и бережное искусство.
             </p>
             <div className="mt-3 text-[14px] opacity-75 font-semibold z-10 relative">
-              — Надежда, основатель студии
+              — Надежда, основатель центра
             </div>
           </div>
         </Reveal>

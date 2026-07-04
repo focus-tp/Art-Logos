@@ -41,7 +41,7 @@ export default function TeamBento() {
             </div>
             <div className="flex flex-col text-center sm:text-left h-full justify-center">
               <h3 className="font-fredoka text-2xl font-bold text-teal-800 mb-1">Надежда Лебедева</h3>
-              <p className="font-bold text-orange-500 mb-3">Основатель студии, логопед</p>
+              <p className="font-bold text-orange-500 mb-3">Основатель центра, логопед</p>
               <p className="italic text-teal-700 mb-4 text-lg">«Речь и таланты детей расцветают через творчество»</p>
               <p className="text-sm text-teal-600/80 font-medium leading-tight">Образование:<br/>ЯГПУ им. К.Д Ушинского, г. Ярославль. Специальное дефектологическое образование. Логопедия, логопедический массаж.</p>
             </div>
