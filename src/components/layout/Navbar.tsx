@@ -38,7 +38,7 @@ export default function Navbar() {
       
       {/* Desktop Menu */}
       <ul className="hidden lg:flex items-center gap-4 xl:gap-7">
-        <li><a href="#about" className="text-[14px] xl:text-[15px] font-semibold text-tx-m hover:text-em transition-colors">О студии</a></li>
+        <li><a href="#about" className="text-[14px] xl:text-[15px] font-semibold text-tx-m hover:text-em transition-colors">О центре</a></li>
         <li><a href="#services" className="text-[14px] xl:text-[15px] font-semibold text-tx-m hover:text-em transition-colors">Направления</a></li>
         <li><a href="#team" className="text-[14px] xl:text-[15px] font-semibold text-tx-m hover:text-em transition-colors">Специалисты</a></li>
         <li><a href="#parents" className="text-[14px] xl:text-[15px] font-semibold text-tx-m hover:text-em transition-colors">Родителям</a></li>
