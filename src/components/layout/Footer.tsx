@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="bg-tx text-white pt-16 pb-10 px-5">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
-        
+
         {/* Логотип и контакты */}
         <div className="md:col-span-2">
           <div className="flex items-center gap-2 font-fredoka text-2xl font-semibold text-white mb-4">
@@ -20,7 +20,7 @@ export default function Footer() {
             <a href="https://vk.com/write-236774762" aria-label="Написать ВКонтакте" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center text-lg hover:bg-em transition-colors">👥</a>
           </div>
         </div>
-        
+
         {/* Навигация: Центр */}
         <div className="flex flex-col">
           <h4 className="text-sm font-extrabold mb-4 text-white/50 tracking-wide uppercase">Центр</h4>
@@ -30,7 +30,7 @@ export default function Footer() {
 
           </ul>
         </div>
-        
+
         {/* Навигация: Родителям */}
         <div className="flex flex-col">
           <h4 className="text-sm font-extrabold mb-4 text-white/50 tracking-wide uppercase">Родителям</h4>
@@ -41,7 +41,7 @@ export default function Footer() {
           </ul>
         </div>
       </div>
-      
+
       {/* Юридическая информация и Копирайт */}
       <div className="max-w-6xl mx-auto mt-10 pt-6 border-t border-white/10 flex flex-col md:flex-row justify-between items-center text-[13px] text-white/40 gap-4 text-center md:text-left">
         <div className="flex flex-col gap-1">
@@ -49,7 +49,7 @@ export default function Footer() {
           {/* Впиши сюда реальные ФИО и ИНН девушки-организатора */}
           <span>Лебедева Надежда Юрьевна | ИНН 442200605444</span>
         </div>
-        
+
         <span className="text-[11px] text-white/30 text-center md:text-right max-w-xs">
           Продолжая использовать сайт, вы соглашаетесь с использованием файлов cookie.
         </span>
