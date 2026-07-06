@@ -16,13 +16,13 @@ export default function Playworld({ childName, onPlayGame, hideHeader }: { child
 
       {!hideHeader && (
         <Reveal className="relative z-10">
-          <div className="inline-flex items-center gap-1.5 bg-em-p text-em rounded-full py-1.5 px-4 text-[12px] font-extrabold tracking-wide uppercase mb-5">
+          <div className="inline-flex items-center gap-1.5 bg-em-p text-em rounded-full py-1.5 px-4 text-[13px] font-extrabold tracking-wide uppercase mb-5">
             ✦ Игровой мир
           </div>
           <h2 className="font-fredoka text-[clamp(30px,4vw,46px)] font-bold leading-[1.15] mb-4">
             Мини-игры для {childName ? childName : 'малышей'}
           </h2>
-          <p className="text-[18px] text-tx-m font-medium leading-[1.6] max-w-[560px] mx-auto">
+          <p className="text-[19px] text-tx-m font-medium leading-[1.6] max-w-[560px] mx-auto">
             Нажмите на игру — и начинайте прямо сейчас!
           </p>
         </Reveal>
@@ -43,13 +43,13 @@ export default function Playworld({ childName, onPlayGame, hideHeader }: { child
               onClick={() => onPlayGame && gm.id && onPlayGame(gm.id)}
               className={`bg-white rounded-[28px] p-9 text-center shadow-[0_8px_32px_rgba(0,0,0,.06)] transition-all duration-300 ${gm.id ? 'cursor-pointer hover:-translate-y-2 hover:scale-[1.02] hover:shadow-[0_20px_50px_rgba(15,139,109,.2)]' : 'cursor-default opacity-80'}`}
             >
-              <span className="text-[52px] block mb-4" style={{ animation: `bounce 3s infinite ease-in-out ${i*0.2}s` }}>
+              <span className="text-[53px] block mb-4" style={{ animation: `bounce 3s infinite ease-in-out ${i*0.2}s` }}>
                 {gm.e}
               </span>
-              <h3 className="font-fredoka text-[20px] font-semibold mb-2">{gm.title}</h3>
-              <p className="text-[13px] text-tx-m leading-[1.5] mb-4">{gm.desc}</p>
+              <h3 className="font-fredoka text-[21px] font-semibold mb-2">{gm.title}</h3>
+              <p className="text-[14px] text-tx-m leading-[1.5] mb-4">{gm.desc}</p>
               
-              <span className={`inline-block rounded-full py-1.5 px-4 text-[12px] font-bold ${gm.badge === 'go' ? 'bg-peach-l text-[#C47A4A]' : 'bg-em-p text-em'}`}>
+              <span className={`inline-block rounded-full py-1.5 px-4 text-[13px] font-bold ${gm.badge === 'go' ? 'bg-peach-l text-[#C47A4A]' : 'bg-em-p text-em'}`}>
                 {gm.badgeTxt}
               </span>
             </div>

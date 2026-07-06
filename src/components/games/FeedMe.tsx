@@ -72,7 +72,7 @@ export default function FeedMe() {
         <motion.div
           animate={isEating ? { scale: [1, 1.15, 0.9, 1.1, 1], y: [0, -10, 5, -5, 0] } : { scale: 1, y: 0 }}
           transition={{ duration: 0.5, repeat: isEating ? 1 : 0 }}
-          className="text-[140px] md:text-[180px] drop-shadow-2xl select-none leading-none"
+          className="text-[141px] md:text-[181px] drop-shadow-2xl select-none leading-none"
         >
           🐻
         </motion.div>
@@ -94,7 +94,7 @@ export default function FeedMe() {
                 ? { duration: 0.6, ease: "easeIn" } 
                 : { repeat: Infinity, duration: 2, ease: "easeInOut" }
             }
-            className="text-[100px] md:text-[120px] cursor-pointer hover:drop-shadow-2xl select-none drop-shadow-lg active:scale-95 transition-transform"
+            className="text-[101px] md:text-[121px] cursor-pointer hover:drop-shadow-2xl select-none drop-shadow-lg active:scale-95 transition-transform"
           >
             {FOODS[foodIndex]}
           </motion.div>

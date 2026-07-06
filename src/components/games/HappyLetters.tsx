@@ -100,7 +100,7 @@ export default function HappyLetters() {
           />
 
           {/* буква */}
-          <span className="text-[140px] font-black text-white drop-shadow-lg">
+          <span className="text-[141px] font-black text-white drop-shadow-lg">
             {letters[current].letter}
           </span>
         </div>

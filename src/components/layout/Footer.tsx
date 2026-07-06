@@ -43,14 +43,14 @@ export default function Footer() {
       </div>
       
       {/* Юридическая информация и Копирайт */}
-      <div className="max-w-6xl mx-auto mt-10 pt-6 border-t border-white/10 flex flex-col md:flex-row justify-between items-center text-[12px] text-white/40 gap-4 text-center md:text-left">
+      <div className="max-w-6xl mx-auto mt-10 pt-6 border-t border-white/10 flex flex-col md:flex-row justify-between items-center text-[13px] text-white/40 gap-4 text-center md:text-left">
         <div className="flex flex-col gap-1">
           <span>© {currentYear} АРТ-ЛОГОС. Все права защищены.</span>
           {/* Впиши сюда реальные ФИО и ИНН девушки-организатора */}
           <span>Лебедева Надежда Юрьевна | ИНН 442200605444</span>
         </div>
         
-        <span className="text-[10px] text-white/30 text-center md:text-right max-w-xs">
+        <span className="text-[11px] text-white/30 text-center md:text-right max-w-xs">
           Продолжая использовать сайт, вы соглашаетесь с использованием файлов cookie.
         </span>
       </div>

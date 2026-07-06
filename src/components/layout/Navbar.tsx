@@ -38,25 +38,27 @@ export default function Navbar() {
       
       {/* Desktop Menu */}
       <ul className="hidden lg:flex items-center gap-4 xl:gap-7">
-        <li><a href="#about" className="text-[14px] xl:text-[15px] font-semibold text-tx-m hover:text-em transition-colors">О центре</a></li>
-        <li><a href="#services" className="text-[14px] xl:text-[15px] font-semibold text-tx-m hover:text-em transition-colors">Направления</a></li>
-        <li><a href="#team" className="text-[14px] xl:text-[15px] font-semibold text-tx-m hover:text-em transition-colors">Специалисты</a></li>
-        <li><a href="#parents" className="text-[14px] xl:text-[15px] font-semibold text-tx-m hover:text-em transition-colors">Родителям</a></li>
-        <li><a href="#cta" className="text-[14px] xl:text-[15px] font-semibold text-tx-m hover:text-em transition-colors">Контакты</a></li>
-        
-        {/* Временно скрываем кнопку "Детям" на десктопе 
+        <li><a href="#about" className="text-[15px] xl:text-[16px] font-semibold text-tx-m hover:text-em transition-colors">О центре</a></li>
+        <li><a href="#services" className="text-[15px] xl:text-[16px] font-semibold text-tx-m hover:text-em transition-colors">Направления</a></li>
+        <li><a href="#team" className="text-[15px] xl:text-[16px] font-semibold text-tx-m hover:text-em transition-colors">Специалисты</a></li>
+        <li><a href="#parents" className="text-[15px] xl:text-[16px] font-semibold text-tx-m hover:text-em transition-colors">Родителям</a></li>
+        <li><a href="#cta" className="text-[15px] xl:text-[16px] font-semibold text-tx-m hover:text-em transition-colors">Контакты</a></li>
         <li>
-          <Link to="/kids" className="bg-orange-400 text-white px-4 xl:px-5 py-2 rounded-full text-[14px] xl:text-[15px] font-bold shadow-md hover:bg-orange-500 hover:-translate-y-0.5 transition-all flex items-center gap-2">
-            🎈 Детям
+          <Link to="/gallery" className="text-[15px] xl:text-[16px] font-semibold text-tx-m hover:text-em transition-colors">
+            Галерея
           </Link>
         </li>
-        */}
+        {/* <li>
+          <Link to="/kids" className="bg-orange-400 text-white px-4 xl:px-5 py-2 rounded-full text-[15px] xl:text-[16px] font-bold shadow-md hover:bg-orange-500 hover:-translate-y-0.5 transition-all">
+            Детям
+          </Link>
+        </li> */}
       </ul>
       
       <div className="hidden lg:block">
         <a 
           href="tel:+79301228133" 
-          className="bg-em text-white rounded-full py-2.5 px-5 xl:px-6 text-[14px] xl:text-[15px] font-bold hover:bg-em-l hover:-translate-y-[1px] transition-all shadow-[0_4px_16px_rgba(12,97,75,.35)]"
+          className="bg-em text-white rounded-full py-2.5 px-5 xl:px-6 text-[15px] xl:text-[16px] font-bold hover:bg-em-l hover:-translate-y-[1px] transition-all shadow-[0_4px_16px_rgba(12,97,75,.35)]"
         >
           Записаться
         </a>
@@ -89,15 +91,16 @@ export default function Navbar() {
             <li><a href="#team" onClick={closeMenu} className="text-xl font-semibold text-tx hover:text-em transition-colors">Специалисты</a></li>
             <li><a href="#parents" onClick={closeMenu} className="text-xl font-semibold text-tx hover:text-em transition-colors">Родителям</a></li>
             <li><a href="#cta" onClick={closeMenu} className="text-xl font-semibold text-tx hover:text-em transition-colors">Контакты</a></li>
-            
-            {/* Временно скрываем кнопку "Детям" на мобильных
             <li className="flex justify-center mt-4">
-              <Link to="/kids" onClick={closeMenu} className="bg-orange-400 text-white px-8 py-3 rounded-full text-lg font-bold shadow-md hover:bg-orange-500 hover:-translate-y-0.5 transition-all flex items-center justify-center gap-2 w-full max-w-xs">
-                🎈 Детям
+              <Link to="/gallery" onClick={closeMenu} className="text-xl font-semibold text-tx hover:text-em transition-colors">
+                Галерея
               </Link>
             </li>
-            */}
-            
+            {/* <li className="flex justify-center mt-4">
+              <Link to="/kids" onClick={closeMenu} className="bg-orange-400 text-white px-8 py-3 rounded-full text-lg font-bold shadow-md hover:bg-orange-500 hover:-translate-y-0.5 transition-all flex items-center justify-center w-full max-w-xs">
+                Детям
+              </Link>
+            </li> */}
             <li className="flex justify-center mt-2">
               <a 
                 href="tel:+79301228133" 

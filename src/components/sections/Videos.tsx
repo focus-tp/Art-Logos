@@ -32,13 +32,13 @@ export default function Videos({ childName, category }: { childName?: string, ca
     <Section id="videos" className="bg-ww border-t border-sage-l/50">
       {category !== 'warmups' && category !== 'cartoons' && (
         <Reveal className="mb-14">
-          <div className="inline-flex items-center gap-1.5 bg-em-p text-em rounded-full py-1.5 px-4 text-[12px] font-extrabold tracking-wide uppercase mb-5">
+          <div className="inline-flex items-center gap-1.5 bg-em-p text-em rounded-full py-1.5 px-4 text-[13px] font-extrabold tracking-wide uppercase mb-5">
             ✦ Образовательные мультики
           </div>
           <h2 className="font-fredoka text-[clamp(30px,4vw,46px)] font-bold leading-[1.15] mb-4">
             Учимся говорить<br/>вместе с мультиками
           </h2>
-          <p className="text-[18px] text-tx-m font-medium leading-[1.6] max-w-[560px]">
+          <p className="text-[19px] text-tx-m font-medium leading-[1.6] max-w-[560px]">
             Куратированный детский контент для развития речи. Нажмите — и смотрите!
           </p>
         </Reveal>
@@ -56,7 +56,7 @@ export default function Videos({ childName, category }: { childName?: string, ca
           <button
             key={cat.id}
             onClick={() => setActiveCat(cat.id)}
-            className={`border-2 rounded-full py-2 px-5 text-[14px] font-bold transition-all ${
+            className={`border-2 rounded-full py-2 px-5 text-[15px] font-bold transition-all ${
               activeCat === cat.id 
                 ? 'bg-em border-em text-white' 
                 : 'bg-white border-tx/10 text-tx-m hover:bg-em hover:border-em hover:text-white'
@@ -86,9 +86,9 @@ export default function Videos({ childName, category }: { childName?: string, ca
                 </div>
               </div>
               <div className="p-4 md:p-5">
-                <div className="text-[11px] font-extrabold uppercase tracking-wide text-em mb-1.5">{v.catLbl}</div>
-                <div className="text-[15px] font-bold leading-[1.4] mb-1.5 text-tx">{v.title}</div>
-                <div className="text-[13px] text-tx-m">⏱ {v.dur}</div>
+                <div className="text-[12px] font-extrabold uppercase tracking-wide text-em mb-1.5">{v.catLbl}</div>
+                <div className="text-[16px] font-bold leading-[1.4] mb-1.5 text-tx">{v.title}</div>
+                <div className="text-[14px] text-tx-m">⏱ {v.dur}</div>
               </div>
             </div>
           </Reveal>

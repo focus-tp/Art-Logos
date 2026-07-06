@@ -54,12 +54,12 @@ export default function MemoryGame() {
     <div className="w-full h-full bg-[#f8f6f0] p-4 flex flex-col pt-12 items-center">
       <div className="flex justify-center gap-8 mb-6">
         <div className="text-center">
-          <div className="font-fredoka text-[28px] font-bold text-em leading-none">{moves}</div>
-          <div className="text-[12px] font-semibold text-tx-m">Ходов</div>
+          <div className="font-fredoka text-[29px] font-bold text-em leading-none">{moves}</div>
+          <div className="text-[13px] font-semibold text-tx-m">Ходов</div>
         </div>
         <div className="text-center">
-          <div className="font-fredoka text-[28px] font-bold text-em leading-none">{matched.length / 2}</div>
-          <div className="text-[12px] font-semibold text-tx-m">Пар найдено</div>
+          <div className="font-fredoka text-[29px] font-bold text-em leading-none">{matched.length / 2}</div>
+          <div className="text-[13px] font-semibold text-tx-m">Пар найдено</div>
         </div>
       </div>
 
@@ -95,7 +95,7 @@ export default function MemoryGame() {
         })}
       </div>
 
-      <div className="text-center font-fredoka text-[22px] font-semibold text-em min-h-[30px] mb-4">
+      <div className="text-center font-fredoka text-[23px] font-semibold text-em min-h-[30px] mb-4">
         {isWon ? `🎉 Ура! Все пары найдены за ${moves} ходов!` : "Найди все пары! 🎮"}
       </div>
       

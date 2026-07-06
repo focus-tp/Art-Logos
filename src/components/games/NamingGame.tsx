@@ -34,9 +34,9 @@ export default function NamingGame() {
   if (finished) {
     return (
       <div className="text-center py-10 px-5">
-        <div className="text-[80px] mb-5">🎉</div>
-        <div className="font-fredoka text-[32px] font-bold text-em mb-3">Молодец!</div>
-        <div className="text-[18px] text-tx-m mb-7">Ты назвал {score} из {shuffled.length} слов правильно!</div>
+        <div className="text-[81px] mb-5">🎉</div>
+        <div className="font-fredoka text-[33px] font-bold text-em mb-3">Молодец!</div>
+        <div className="text-[19px] text-tx-m mb-7">Ты назвал {score} из {shuffled.length} слов правильно!</div>
         <button onClick={startOver} className="bg-em text-white rounded-full py-3 px-8 font-bold hover:bg-em-l transition-colors">
           🔄 Ещё раз
         </button>
@@ -50,12 +50,12 @@ export default function NamingGame() {
     <div className="w-full h-full bg-[#f8f6f0] p-4 flex flex-col pt-12 items-center">
       <div className="flex justify-center gap-8 mb-6">
         <div className="text-center">
-          <div className="font-fredoka text-[28px] font-bold text-em leading-none">{score}</div>
-          <div className="text-[12px] font-semibold text-tx-m">Очков</div>
+          <div className="font-fredoka text-[29px] font-bold text-em leading-none">{score}</div>
+          <div className="text-[13px] font-semibold text-tx-m">Очков</div>
         </div>
         <div className="text-center">
-          <div className="font-fredoka text-[28px] font-bold text-em leading-none">{shuffled.length - idx}</div>
-          <div className="text-[12px] font-semibold text-tx-m">Осталось</div>
+          <div className="font-fredoka text-[29px] font-bold text-em leading-none">{shuffled.length - idx}</div>
+          <div className="text-[13px] font-semibold text-tx-m">Осталось</div>
         </div>
       </div>
 
@@ -63,11 +63,11 @@ export default function NamingGame() {
         onClick={() => setRevealed(true)}
         className="bg-em-p rounded-[24px] p-10 text-center cursor-pointer transition-all mb-6 hover:shadow-card hover:-translate-y-1"
       >
-        <div className="text-[90px] mb-3 leading-none select-none">{currentItem.e}</div>
+        <div className="text-[91px] mb-3 leading-none select-none">{currentItem.e}</div>
         {!revealed ? (
-          <div className="text-[20px] text-em font-bold font-fredoka">Нажми, чтобы узнать!</div>
+          <div className="text-[21px] text-em font-bold font-fredoka">Нажми, чтобы узнать!</div>
         ) : (
-          <div className="text-[32px] text-em font-bold font-fredoka">{currentItem.n}</div>
+          <div className="text-[33px] text-em font-bold font-fredoka">{currentItem.n}</div>
         )}
       </div>
 
