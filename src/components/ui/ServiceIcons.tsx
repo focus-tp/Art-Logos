@@ -146,7 +146,7 @@ export function IconMomKid({ className = '' }: IconProps) {
       <circle cx="44" cy="18" r="6" fill="#fde8d8" fillOpacity="0.5"/>
       {/* Малыш — тело */}
       <path
-        d="M44 24 L44 40 M44 40 L39 54 M44 40 L49 54 M32 32 L44 28"
+        d="M44 24 L44 40 M44 40 L39 54 M44 40 L49 54 M32 32 L44 28 M44 28 L53 32"
         stroke="#d38466"
         strokeWidth="2.5"
         strokeLinecap="round"
