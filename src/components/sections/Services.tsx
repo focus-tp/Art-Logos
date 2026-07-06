@@ -55,7 +55,7 @@ function ServiceCard({ s, i }: { s: ServiceItem, i: number }) {
             <div className="relative inline-block bg-em-p rounded-2xl p-3 group-hover:scale-105 transition-transform duration-300">
               <Icon className="w-20 h-20" />
               {s.title.includes('онлайн') && (
-                <span className="absolute -top-1.5 -right-1.5 bg-sage text-white text-[9px] font-extrabold uppercase tracking-wide px-1.5 py-0.5 rounded-full shadow-sm whitespace-nowrap">
+                <span className="absolute -top-1.5 -right-1.5 bg-sky-500 text-white text-[9px] font-extrabold uppercase tracking-wide px-1.5 py-0.5 rounded-full shadow-sm whitespace-nowrap">
                   📶 Онлайн
                 </span>
               )}
