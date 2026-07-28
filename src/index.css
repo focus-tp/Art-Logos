@@ -85,7 +85,8 @@ html {
 }
 
 /* 4. Фикс для сафари (чтобы оборот карточек не просвечивал) */
-.backface-hidden {
+.backface-hidden,
+.backface-hidden * {
   -webkit-backface-visibility: hidden !important;
   backface-visibility: hidden !important;
 }

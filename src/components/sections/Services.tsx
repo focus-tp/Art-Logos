@@ -42,11 +42,11 @@ function ServiceCard({ s, i }: { s: ServiceItem, i: number }) {
       >
         {/* ЛИЦЕВАЯ СТОРОНА */}
         <div 
-          className="relative rounded-3xl p-5 xl:p-6 shadow-card ring-2 ring-transparent group-hover:ring-em group-hover:-translate-y-1 transition-all flex flex-col items-start border border-sage-l/50 backface-hidden"
+          className="relative bg-white rounded-3xl p-5 xl:p-6 shadow-card ring-2 ring-transparent group-hover:ring-em group-hover:-translate-y-1 transition-all flex flex-col items-start border border-sage-l/50 backface-hidden"
           style={{ gridArea: 'card', transform: 'rotateY(0deg) translateZ(1px)', WebkitBackfaceVisibility: 'hidden' }}
         >
           {/* Контейнер для фона и декора с overflow-hidden */}
-          <div className="absolute inset-0 bg-white rounded-3xl overflow-hidden pointer-events-none -z-10">
+          <div className="absolute inset-0 rounded-3xl overflow-hidden pointer-events-none z-0">
             {/* Фоновый водяной знак (декор) */}
             <div className="absolute -bottom-8 -right-8 opacity-[0.06] rotate-[-10deg]">
               <Icon className="w-52 h-52" />
@@ -54,7 +54,7 @@ function ServiceCard({ s, i }: { s: ServiceItem, i: number }) {
           </div>
 
           {/* SVG Иконка в цветном блоке */}
-          <div className="mb-5 w-full relative z-10">
+          <div className="mb-5 w-full">
             <div className="relative inline-block bg-em-p rounded-2xl p-3 group-hover:scale-105 transition-transform duration-300">
               <Icon className="w-20 h-20" />
               {s.title.includes('онлайн') && (
@@ -64,10 +64,10 @@ function ServiceCard({ s, i }: { s: ServiceItem, i: number }) {
               )}
             </div>
           </div>
-          <h3 className="text-[21px] font-bold mb-2 leading-tight text-teal-950 relative z-10">{s.title}</h3>
-          <p className="text-[15px] text-tx-m leading-[1.55] flex-grow relative z-10">{s.short}</p>
+          <h3 className="text-[21px] font-bold mb-2 leading-tight text-teal-950">{s.title}</h3>
+          <p className="text-[15px] text-tx-m leading-[1.55] flex-grow">{s.short}</p>
           
-          <div className="flex items-center justify-between w-full mt-auto pt-4 border-t border-sage-l/50 relative z-10">
+          <div className="flex items-center justify-between w-full mt-auto pt-4 border-t border-sage-l/50">
             <span className="inline-block bg-em-p text-em rounded-full py-1.5 px-3 text-[12px] font-bold">
               {s.age}
             </span>
@@ -79,11 +79,11 @@ function ServiceCard({ s, i }: { s: ServiceItem, i: number }) {
 
         {/* ОБРАТНАЯ СТОРОНА */}
         <div 
-          className={`relative ${theme.text} rounded-3xl p-5 md:p-6 xl:p-7 shadow-card-hover flex flex-col backface-hidden`}
+          className={`relative ${theme.bg} ${theme.text} rounded-3xl p-5 md:p-6 xl:p-7 shadow-card-hover flex flex-col backface-hidden`}
           style={{ gridArea: 'card', transform: 'rotateY(180deg) translateZ(1px)', WebkitBackfaceVisibility: 'hidden' }}
         >
           {/* Контейнер для фона и декора с overflow-hidden */}
-          <div className={`absolute inset-0 ${theme.bg} rounded-3xl overflow-hidden pointer-events-none -z-10`}>
+          <div className={`absolute inset-0 rounded-3xl overflow-hidden pointer-events-none z-0`}>
             {/* Фирменная Буковка А в углу */}
             <img 
               src="/mascot-a.png" 
@@ -114,7 +114,7 @@ function ServiceCard({ s, i }: { s: ServiceItem, i: number }) {
           <a 
             href="#cta"
             onClick={(e) => e.stopPropagation()}
-            className="mt-auto block w-full bg-white text-tx rounded-full py-3 px-4 text-[15px] font-extrabold hover:bg-white/90 hover:scale-[1.01] active:scale-95 transition-all text-center shadow-md relative z-10"
+            className="mt-auto block w-full bg-white text-tx rounded-full py-3 px-4 text-[15px] font-extrabold hover:bg-white/90 hover:scale-[1.01] active:scale-95 transition-all text-center shadow-md"
           >
             Записаться
           </a>
