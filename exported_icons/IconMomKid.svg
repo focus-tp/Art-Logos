@@ -1,0 +1,43 @@
+<svg width="800" height="800" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+      {/* Фоновое пятно */}
+      <ellipse cx="32" cy="36" rx="22" ry="20" fill="#fde8d8" opacity="0.6"/>
+
+      {/* Мама — голова */}
+      <circle cx="20" cy="14" r="7" stroke="#0c614b" stroke-width="2.5"/>
+      <circle cx="20" cy="14" r="7" fill="#d8efe9" fill-opacity="0.5"/>
+      {/* Мама — тело */}
+      <path
+        d="M20 21 L20 40 M20 40 L14 56 M20 40 L26 56 M8 30 L20 25 L32 32"
+        stroke="#0c614b"
+        stroke-width="2.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+
+      {/* Малыш — голова */}
+      <circle cx="44" cy="18" r="6" stroke="#d38466" stroke-width="2.5"/>
+      <circle cx="44" cy="18" r="6" fill="#fde8d8" fill-opacity="0.5"/>
+      {/* Малыш — тело */}
+      <path
+        d="M44 24 L44 40 M44 40 L39 54 M44 40 L49 54 M32 32 L44 28 M44 28 L53 32"
+        stroke="#d38466"
+        stroke-width="2.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+
+      {/* Сердечко */}
+      <path
+        d="M30 8 C30 5.5 32.5 4 34 6.5 C35.5 4 38 5.5 38 8 C38 11 34 14 34 14 C34 14 30 11 30 8 Z"
+        fill="#d38466"
+        fill-opacity="0.8"
+        stroke="#d38466"
+        stroke-width="1"
+      />
+
+      {/* Конфетти */}
+      <rect x="6" y="6" width="4" height="4" rx="1" fill="#77ae9d" transform="rotate(15 6 6)"/>
+      <rect x="52" y="10" width="3" height="3" rx="0.5" fill="#d38466" opacity="0.6" transform="rotate(-20 52 10)"/>
+      <circle cx="56" cy="30" r="2" fill="#0c614b" opacity="0.3"/>
+      <circle cx="8" cy="46" r="1.5" fill="#d38466" opacity="0.4"/>
+    </svg>

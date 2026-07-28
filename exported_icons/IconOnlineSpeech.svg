@@ -1,0 +1,26 @@
+<svg width="800" height="800" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+      {/* Фоновое пятно */}
+      <ellipse cx="32" cy="34" rx="24" ry="18" fill="#d8efe9" opacity="0.5"/>
+
+      {/* Ноутбук — экран */}
+      <rect x="10" y="20" width="36" height="24" rx="3" stroke="#0c614b" stroke-width="2.5" stroke-linejoin="round"/>
+      {/* Ноутбук — клавиатура */}
+      <path d="M6 44 L8 48 L48 48 L50 44" stroke="#0c614b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      {/* Экранная рамка */}
+      <rect x="14" y="24" width="28" height="16" rx="2" fill="#77ae9d" fill-opacity="0.2" stroke="#0c614b" stroke-width="1.5"/>
+
+      {/* Пузырь речи из экрана */}
+      <path d="M40 6 C40 4 41.5 3 43 3 L54 3 C55.5 3 57 4 57 6 L57 13 C57 15 55.5 16 54 16 L48 16 L45 20 L45 16 L43 16 C41.5 16 40 15 40 13 Z"
+        stroke="#0c614b" stroke-width="2" stroke-linejoin="round" fill="#fde8d8" fill-opacity="0.6"/>
+      {/* Текст в пузыре */}
+      <line x1="43" y1="8" x2="54" y2="8" stroke="#0c614b" stroke-width="1.5" stroke-linecap="round"/>
+      <line x1="43" y1="11" x2="50" y2="11" stroke="#d38466" stroke-width="1.5" stroke-linecap="round"/>
+
+      {/* Wi-Fi символ */}
+      <path d="M24 35 Q28 31 32 35" stroke="#0c614b" stroke-width="2" stroke-linecap="round"/>
+      <path d="M20 31 Q28 25 36 31" stroke="#0c614b" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+      <circle cx="28" cy="38" r="2" fill="#d38466"/>
+
+      {/* Декор: звёздочка */}
+      <path d="M8 12 L9 9 L10 12 L13 13 L10 14 L9 17 L8 14 L5 13Z" fill="#77ae9d" opacity="0.8"/>
+    </svg>
