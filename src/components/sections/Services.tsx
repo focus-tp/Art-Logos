@@ -42,7 +42,7 @@ function ServiceCard({ s, i }: { s: ServiceItem, i: number }) {
       >
         {/* ЛИЦЕВАЯ СТОРОНА */}
         <div 
-          className="relative overflow-hidden bg-white rounded-3xl p-5 xl:p-6 shadow-card ring-2 ring-transparent group-hover:ring-em group-hover:-translate-y-1 transition-all flex flex-col items-start border border-sage-l/50 [backface-visibility:hidden]"
+          className="relative overflow-hidden bg-white rounded-3xl p-5 xl:p-6 shadow-card ring-2 ring-transparent group-hover:ring-em group-hover:-translate-y-1 transition-all flex flex-col items-start border border-sage-l/50 backface-hidden"
           style={{ gridArea: 'card' }}
         >
           {/* Фоновый водяной знак (декор) */}
@@ -76,7 +76,7 @@ function ServiceCard({ s, i }: { s: ServiceItem, i: number }) {
 
         {/* ОБРАТНАЯ СТОРОНА */}
         <div 
-          className={`${theme.bg} ${theme.text} rounded-3xl p-5 md:p-6 xl:p-7 shadow-card-hover flex flex-col [backface-visibility:hidden] [transform:rotateY(180deg)] overflow-hidden`}
+          className={`${theme.bg} ${theme.text} rounded-3xl p-5 md:p-6 xl:p-7 shadow-card-hover flex flex-col backface-hidden [transform:rotateY(180deg)] overflow-hidden`}
           style={{ gridArea: 'card' }}
         >
           <div className="flex items-start justify-between mb-4">

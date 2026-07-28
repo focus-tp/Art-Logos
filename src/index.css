@@ -83,3 +83,9 @@ html {
 .font-kids * {
   font-family: var(--font-kids) !important;
 }
+
+/* 4. Фикс для сафари (чтобы оборот карточек не просвечивал) */
+.backface-hidden {
+  -webkit-backface-visibility: hidden !important;
+  backface-visibility: hidden !important;
+}
