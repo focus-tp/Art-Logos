@@ -36,18 +36,21 @@ function ServiceCard({ s, i }: { s: ServiceItem, i: number }) {
     >
       <motion.div
         className="w-full h-full grid"
-        style={{ transformStyle: 'preserve-3d', gridTemplateAreas: '"card"' }}
+        style={{ transformStyle: 'preserve-3d', WebkitTransformStyle: 'preserve-3d', gridTemplateAreas: '"card"' }}
         animate={{ rotateY: isFlipped ? 180 : 0 }}
         transition={{ duration: 0.6, type: "spring", stiffness: 220, damping: 22 }}
       >
         {/* ЛИЦЕВАЯ СТОРОНА */}
         <div 
-          className="relative overflow-hidden bg-white rounded-3xl p-5 xl:p-6 shadow-card ring-2 ring-transparent group-hover:ring-em group-hover:-translate-y-1 transition-all flex flex-col items-start border border-sage-l/50 backface-hidden"
+          className="relative rounded-3xl p-5 xl:p-6 shadow-card ring-2 ring-transparent group-hover:ring-em group-hover:-translate-y-1 transition-all flex flex-col items-start border border-sage-l/50 backface-hidden"
           style={{ gridArea: 'card', transform: 'rotateY(0deg) translateZ(1px)', WebkitBackfaceVisibility: 'hidden' }}
         >
-          {/* Фоновый водяной знак (декор) */}
-          <div className="absolute -bottom-8 -right-8 opacity-[0.06] pointer-events-none z-0 rotate-[-10deg]">
-            <Icon className="w-52 h-52" />
+          {/* Контейнер для фона и декора с overflow-hidden */}
+          <div className="absolute inset-0 bg-white rounded-3xl overflow-hidden pointer-events-none -z-10">
+            {/* Фоновый водяной знак (декор) */}
+            <div className="absolute -bottom-8 -right-8 opacity-[0.06] rotate-[-10deg]">
+              <Icon className="w-52 h-52" />
+            </div>
           </div>
 
           {/* SVG Иконка в цветном блоке */}
@@ -76,9 +79,18 @@ function ServiceCard({ s, i }: { s: ServiceItem, i: number }) {
 
         {/* ОБРАТНАЯ СТОРОНА */}
         <div 
-          className={`${theme.bg} ${theme.text} rounded-3xl p-5 md:p-6 xl:p-7 shadow-card-hover flex flex-col backface-hidden overflow-hidden`}
+          className={`relative ${theme.text} rounded-3xl p-5 md:p-6 xl:p-7 shadow-card-hover flex flex-col backface-hidden`}
           style={{ gridArea: 'card', transform: 'rotateY(180deg) translateZ(1px)', WebkitBackfaceVisibility: 'hidden' }}
         >
+          {/* Контейнер для фона и декора с overflow-hidden */}
+          <div className={`absolute inset-0 ${theme.bg} rounded-3xl overflow-hidden pointer-events-none -z-10`}>
+            {/* Фирменная Буковка А в углу */}
+            <img 
+              src="/mascot-a.png" 
+              alt="Буковка А" 
+              className="absolute -bottom-5 -right-5 w-24 h-auto opacity-15"
+            />
+          </div>
           <div className="flex items-start justify-between mb-4">
             <h3 className="text-[18px] xl:text-[20px] font-bold leading-tight pr-2">{s.title}</h3>
             <div className="w-14 h-14 bg-white/95 rounded-2xl flex items-center justify-center shrink-0 shadow ml-2">
@@ -106,13 +118,6 @@ function ServiceCard({ s, i }: { s: ServiceItem, i: number }) {
           >
             Записаться
           </a>
-
-          {/* Фирменная Буковка А в углу */}
-          <img 
-            src="/mascot-a.png" 
-            alt="Буковка А" 
-            className="absolute -bottom-5 -right-5 w-24 h-auto opacity-15 pointer-events-none z-0"
-          />
         </div>
       </motion.div>
     </div>
