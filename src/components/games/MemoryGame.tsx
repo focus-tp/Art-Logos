@@ -79,13 +79,16 @@ export default function MemoryGame() {
                 style={{ transformStyle: 'preserve-3d', transform: isFlipped ? 'rotateY(180deg)' : 'rotateY(0deg)' }}
               >
                 {/* Back (Cover) */}
-                <div className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center text-4xl shadow-[0_4px_16px_rgba(0,0,0,.08)] backface-hidden">
+                <div 
+                  className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center text-4xl shadow-[0_4px_16px_rgba(0,0,0,.08)] backface-hidden"
+                  style={{ transform: 'rotateY(0deg) translateZ(1px)', WebkitBackfaceVisibility: 'hidden' }}
+                >
                   <span className="opacity-30 text-2xl">⭐</span>
                 </div>
                 {/* Front (Content) */}
                 <div 
                   className={`absolute inset-0 rounded-2xl flex items-center justify-center text-3xl sm:text-4xl backface-hidden ${isMatched ? 'bg-em-p text-em' : 'bg-em text-white'}`}
-                  style={{ transform: 'rotateY(180deg)' }}
+                  style={{ transform: 'rotateY(180deg) translateZ(1px)', WebkitBackfaceVisibility: 'hidden' }}
                 >
                   {c}
                 </div>

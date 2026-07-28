@@ -43,7 +43,7 @@ function ServiceCard({ s, i }: { s: ServiceItem, i: number }) {
         {/* ЛИЦЕВАЯ СТОРОНА */}
         <div 
           className="relative overflow-hidden bg-white rounded-3xl p-5 xl:p-6 shadow-card ring-2 ring-transparent group-hover:ring-em group-hover:-translate-y-1 transition-all flex flex-col items-start border border-sage-l/50 backface-hidden"
-          style={{ gridArea: 'card' }}
+          style={{ gridArea: 'card', transform: 'rotateY(0deg) translateZ(1px)', WebkitBackfaceVisibility: 'hidden' }}
         >
           {/* Фоновый водяной знак (декор) */}
           <div className="absolute -bottom-8 -right-8 opacity-[0.06] pointer-events-none z-0 rotate-[-10deg]">
@@ -76,8 +76,8 @@ function ServiceCard({ s, i }: { s: ServiceItem, i: number }) {
 
         {/* ОБРАТНАЯ СТОРОНА */}
         <div 
-          className={`${theme.bg} ${theme.text} rounded-3xl p-5 md:p-6 xl:p-7 shadow-card-hover flex flex-col backface-hidden [transform:rotateY(180deg)] overflow-hidden`}
-          style={{ gridArea: 'card' }}
+          className={`${theme.bg} ${theme.text} rounded-3xl p-5 md:p-6 xl:p-7 shadow-card-hover flex flex-col backface-hidden overflow-hidden`}
+          style={{ gridArea: 'card', transform: 'rotateY(180deg) translateZ(1px)', WebkitBackfaceVisibility: 'hidden' }}
         >
           <div className="flex items-start justify-between mb-4">
             <h3 className="text-[18px] xl:text-[20px] font-bold leading-tight pr-2">{s.title}</h3>
