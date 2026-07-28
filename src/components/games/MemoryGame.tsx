@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { motion } from 'motion/react';
 
 const MEM_PAIRS = ['🐱','🐶','🐸','🦊','🐨','🐼','🦁','🐯'];
 
@@ -52,6 +53,12 @@ export default function MemoryGame() {
 
   return (
     <div className="w-full h-full bg-[#f8f6f0] p-4 flex flex-col pt-12 items-center">
+      <style>{`
+        .safari-flip-fix, .safari-flip-fix * {
+          -webkit-backface-visibility: hidden !important;
+          backface-visibility: hidden !important;
+        }
+      `}</style>
       <div className="flex justify-center gap-8 mb-6">
         <div className="text-center">
           <div className="font-fredoka text-[29px] font-bold text-em leading-none">{moves}</div>
@@ -74,25 +81,29 @@ export default function MemoryGame() {
               className="aspect-square relative cursor-pointer group rounded-2xl"
               style={{ transformStyle: 'preserve-3d' }}
             >
-              <div 
+              <motion.div 
                 className="absolute inset-0 transition-all duration-300 ease-out" 
                 style={{ transformStyle: 'preserve-3d', transform: isFlipped ? 'rotateY(180deg)' : 'rotateY(0deg)' }}
               >
                 {/* Back (Cover) */}
-                <div 
-                  className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center text-4xl shadow-[0_4px_16px_rgba(0,0,0,.08)] backface-hidden"
+                <motion.div 
+                  className="absolute inset-0 bg-white rounded-2xl flex items-center justify-center text-4xl shadow-[0_4px_16px_rgba(0,0,0,.08)] safari-flip-fix"
                   style={{ transform: 'rotateY(0deg) translateZ(1px)', WebkitBackfaceVisibility: 'hidden' }}
+                  animate={{ opacity: isFlipped ? 0 : 1 }}
+                  transition={{ duration: 0.1, delay: isFlipped ? 0.05 : 0.1 }}
                 >
                   <span className="opacity-30 text-2xl">⭐</span>
-                </div>
+                </motion.div>
                 {/* Front (Content) */}
-                <div 
-                  className={`absolute inset-0 rounded-2xl flex items-center justify-center text-3xl sm:text-4xl backface-hidden ${isMatched ? 'bg-em-p text-em' : 'bg-em text-white'}`}
+                <motion.div 
+                  className={`absolute inset-0 rounded-2xl flex items-center justify-center text-3xl sm:text-4xl safari-flip-fix ${isMatched ? 'bg-em-p text-em' : 'bg-em text-white'}`}
                   style={{ transform: 'rotateY(180deg) translateZ(1px)', WebkitBackfaceVisibility: 'hidden' }}
+                  animate={{ opacity: isFlipped ? 1 : 0 }}
+                  transition={{ duration: 0.1, delay: isFlipped ? 0.1 : 0.05 }}
                 >
                   {c}
-                </div>
-              </div>
+                </motion.div>
+              </motion.div>
             </div>
           );
         })}

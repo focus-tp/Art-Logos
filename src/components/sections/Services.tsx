@@ -41,9 +41,11 @@ function ServiceCard({ s, i }: { s: ServiceItem, i: number }) {
         transition={{ duration: 0.6, type: "spring", stiffness: 220, damping: 22 }}
       >
         {/* ЛИЦЕВАЯ СТОРОНА */}
-        <div 
-          className="relative bg-white rounded-3xl p-5 xl:p-6 shadow-card ring-2 ring-transparent group-hover:ring-em group-hover:-translate-y-1 transition-all flex flex-col items-start border border-sage-l/50 backface-hidden"
-          style={{ gridArea: 'card', transform: 'rotateY(0deg) translateZ(1px)', WebkitBackfaceVisibility: 'hidden' }}
+        <motion.div 
+          className="relative bg-white rounded-3xl p-5 xl:p-6 shadow-card ring-2 ring-transparent group-hover:ring-em group-hover:-translate-y-1 transition-all flex flex-col items-start border border-sage-l/50 safari-flip-fix"
+          style={{ gridArea: 'card', WebkitBackfaceVisibility: 'hidden', transform: 'rotateY(0deg) translateZ(1px)' }}
+          animate={{ opacity: isFlipped ? 0 : 1 }}
+          transition={{ duration: 0.1, delay: isFlipped ? 0.15 : 0.25 }}
         >
           {/* Контейнер для фона и декора с overflow-hidden */}
           <div className="absolute inset-0 rounded-3xl overflow-hidden pointer-events-none z-0">
@@ -75,12 +77,14 @@ function ServiceCard({ s, i }: { s: ServiceItem, i: number }) {
               Подробнее <span className="text-base leading-none">↻</span>
             </span>
           </div>
-        </div>
+        </motion.div>
 
         {/* ОБРАТНАЯ СТОРОНА */}
-        <div 
-          className={`relative ${theme.bg} ${theme.text} rounded-3xl p-5 md:p-6 xl:p-7 shadow-card-hover flex flex-col backface-hidden`}
-          style={{ gridArea: 'card', transform: 'rotateY(180deg) translateZ(1px)', WebkitBackfaceVisibility: 'hidden' }}
+        <motion.div 
+          className={`relative ${theme.bg} ${theme.text} rounded-3xl p-5 md:p-6 xl:p-7 shadow-card-hover flex flex-col safari-flip-fix`}
+          style={{ gridArea: 'card', WebkitBackfaceVisibility: 'hidden', transform: 'rotateY(180deg) translateZ(1px)' }}
+          animate={{ opacity: isFlipped ? 1 : 0 }}
+          transition={{ duration: 0.1, delay: isFlipped ? 0.25 : 0.15 }}
         >
           {/* Контейнер для фона и декора с overflow-hidden */}
           <div className={`absolute inset-0 rounded-3xl overflow-hidden pointer-events-none z-0`}>
@@ -118,7 +122,7 @@ function ServiceCard({ s, i }: { s: ServiceItem, i: number }) {
           >
             Записаться
           </a>
-        </div>
+        </motion.div>
       </motion.div>
     </div>
   );
@@ -127,6 +131,12 @@ function ServiceCard({ s, i }: { s: ServiceItem, i: number }) {
 export default function Services() {
   return (
     <Section id="services" className="bg-ww border-t border-sage-l/30">
+      <style>{`
+        .safari-flip-fix, .safari-flip-fix * {
+          -webkit-backface-visibility: hidden !important;
+          backface-visibility: hidden !important;
+        }
+      `}</style>
       <Reveal>
         <div className="mb-14">
           <div className="inline-flex items-center gap-1.5 bg-em-p text-em rounded-full py-1.5 px-4 text-[13px] font-extrabold tracking-wide uppercase mb-5">
