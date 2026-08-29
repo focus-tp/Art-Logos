@@ -7,6 +7,7 @@ import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import KidsPage from './pages/KidsPage';
 import GalleryPage from './pages/GalleryPage';
+import PrivacyPage from './pages/PrivacyPage';
 import { CookieConsent } from './components/ui/CookieConsent';
 
 export default function App() {
@@ -16,6 +17,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/kids" element={<KidsPage />} />
         <Route path="/gallery" element={<GalleryPage />} />
+        <Route path="/privacy" element={<PrivacyPage />} />
       </Routes>
       <CookieConsent />
     </>

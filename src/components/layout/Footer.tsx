@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
@@ -25,8 +27,8 @@ export default function Footer() {
         <div className="flex flex-col">
           <h4 className="text-sm font-extrabold mb-4 text-white/50 tracking-wide uppercase">Центр</h4>
           <ul className="flex flex-col gap-2.5">
-            <li><a href="#about" className="text-sm text-white/70 hover:text-white transition-colors">О нас</a></li>
-            <li><a href="#services" className="text-sm text-white/70 hover:text-white transition-colors">Направления</a></li>
+            <li><a href="/#about" className="text-sm text-white/70 hover:text-white transition-colors">О нас</a></li>
+            <li><a href="/#services" className="text-sm text-white/70 hover:text-white transition-colors">Направления</a></li>
 
           </ul>
         </div>
@@ -35,9 +37,9 @@ export default function Footer() {
         <div className="flex flex-col">
           <h4 className="text-sm font-extrabold mb-4 text-white/50 tracking-wide uppercase">Родителям</h4>
           <ul className="flex flex-col gap-2.5">
-            <li><a href="#parents" className="text-sm text-white/70 hover:text-white transition-colors">Как мы работаем</a></li>
-            <li><a href="#faq" className="text-sm text-white/70 hover:text-white transition-colors">Вопросы и ответы</a></li>
-            <li><a href="#cta" className="text-sm text-white/70 hover:text-white transition-colors">Записаться</a></li>
+            <li><a href="/#parents" className="text-sm text-white/70 hover:text-white transition-colors">Как мы работаем</a></li>
+            <li><a href="/#faq" className="text-sm text-white/70 hover:text-white transition-colors">Вопросы и ответы</a></li>
+            <li><a href="/#cta" className="text-sm text-white/70 hover:text-white transition-colors">Записаться</a></li>
           </ul>
         </div>
       </div>
@@ -48,6 +50,9 @@ export default function Footer() {
           <span>© {currentYear} АРТ-ЛОГОС. Все права защищены.</span>
           {/* Впиши сюда реальные ФИО и ИНН девушки-организатора */}
           <span>Лебедева Надежда Юрьевна | ИНН 442200605444</span>
+          <Link to="/privacy" className="text-white/55 hover:text-white transition-colors">
+            Политика конфиденциальности
+          </Link>
         </div>
 
         <span className="text-[11px] text-white/30 text-center md:text-right max-w-xs">
