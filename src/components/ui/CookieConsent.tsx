@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'motion/react';
 import { Cookie } from 'lucide-react';
 
@@ -41,8 +42,10 @@ export function CookieConsent() {
                 Мы используем Cookie
               </h4>
               <p className="text-[13px] text-tx-m leading-relaxed mb-4">
-                Этот сайт использует файлы cookie, чтобы обеспечить вам наилучший пользовательский опыт. 
-                Продолжая навигацию, вы соглашаетесь с их использованием.
+                Сайт использует cookie и локальное хранилище для работы интерфейса, а также может использовать cookie сторонних сервисов, включая Jivo. Подробнее — в{' '}
+                <Link to="/privacy" className="font-bold text-em underline underline-offset-2 hover:text-em-l">
+                  Политике конфиденциальности
+                </Link>.
               </p>
               <div className="flex gap-3">
                 <button
